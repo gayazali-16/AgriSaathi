@@ -1,0 +1,44 @@
+[
+  {
+    "boundary_vintage": "Historical labels in source; current district boundaries not verified.",
+    "district": "Krishna",
+    "historical_rows_all_crops": 3920,
+    "state": "Andhra Pradesh",
+    "supported_crops": [
+      "Maize",
+      "Rice"
+    ],
+    "year_range": [
+      1980,
+      2017
+    ]
+  },
+  {
+    "boundary_vintage": "Historical labels in source; current district boundaries not verified.",
+    "district": "Khammam",
+    "historical_rows_all_crops": 3696,
+    "state": "Telangana",
+    "supported_crops": [
+      "Maize",
+      "Rice"
+    ],
+    "year_range": [
+      1980,
+      2017
+    ]
+  },
+  {
+    "boundary_vintage": "Historical labels in source; current district boundaries not verified.",
+    "district": "Nalgonda",
+    "historical_rows_all_crops": 2800,
+    "state": "Telangana",
+    "supported_crops": [
+      "Maize",
+      "Rice"
+    ],
+    "year_range": [
+      1980,
+      2017
+    ]
+  }
+]

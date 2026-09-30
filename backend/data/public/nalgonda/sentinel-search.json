@@ -1,0 +1,6 @@
+{
+  "request_url": "https://earth-search.aws.element84.com/v1/search?collections=sentinel-2-l2a&bbox=79.295%2C16.995%2C79.30499999999999%2C17.005&datetime=2025-08-01T00%3A00%3A00Z%2F2025-10-31T23%3A59%3A59Z&limit=30",
+  "candidate_count_on_first_page": 22,
+  "selected_scene_id": "S2C_44QLD_20250929_0_L2A",
+  "selection": "Lowest scene cloud cover in the first returned candidate page; bounded point search only."
+}

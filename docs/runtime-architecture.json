@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "AgriSaathi runtime architecture",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1380,
+      650
+    ]
+  },
+  "components": [
+    {
+      "id": "farmer-client",
+      "type": "frontend",
+      "label": "React browser UI",
+      "sublabel": "Farmer / officer · optional speech",
+      "pos": [
+        35,
+        240
+      ],
+      "size": [
+        225,
+        85
+      ]
+    },
+    {
+      "id": "http-service",
+      "type": "backend",
+      "label": "FastAPI routes",
+      "sublabel": "/api/v1 · upload sanitization",
+      "pos": [
+        365,
+        240
+      ],
+      "size": [
+        225,
+        85
+      ]
+    },
+    {
+      "id": "advice-service",
+      "type": "backend",
+      "label": "Case advisory pipeline",
+      "sublabel": "Async Gemini + evidence validation",
+      "pos": [
+        700,
+        240
+      ],
+      "size": [
+        225,
+        85
+      ]
+    },
+    {
+      "id": "case-store",
+      "type": "database",
+      "label": "SQLite persistence",
+      "sublabel": "Cases · reviews · scoped feeds",
+      "pos": [
+        1035,
+        240
+      ],
+      "size": [
+        225,
+        85
+      ]
+    },
+    {
+      "id": "access-checks",
+      "type": "security",
+      "label": "Demo session checks",
+      "sublabel": "Signed cookie · role + ownership",
+      "pos": [
+        365,
+        70
+      ],
+      "size": [
+        225,
+        85
+      ]
+    },
+    {
+      "id": "local-evidence",
+      "type": "database",
+      "label": "Prepared evidence",
+      "sublabel": "History + public references + practices",
+      "pos": [
+        700,
+        70
+      ],
+      "size": [
+        225,
+        85
+      ]
+    },
+    {
+      "id": "human-review",
+      "type": "backend",
+      "label": "Review + state adapter",
+      "sublabel": "Consent + review + local exchange",
+      "pos": [
+        1035,
+        70
+      ],
+      "size": [
+        225,
+        85
+      ]
+    },
+    {
+      "id": "private-images",
+      "type": "database",
+      "label": "Private photo files",
+      "sublabel": "Consent required for retention",
+      "pos": [
+        1035,
+        380
+      ],
+      "size": [
+        225,
+        85
+      ]
+    },
+    {
+      "id": "weather-provider",
+      "type": "external",
+      "label": "Weather providers",
+      "sublabel": "Town observation / grid estimate",
+      "pos": [
+        365,
+        530
+      ],
+      "size": [
+        225,
+        85
+      ]
+    },
+    {
+      "id": "model-provider",
+      "type": "external",
+      "label": "Google Gemini API",
+      "sublabel": "Optional · question + sanitized image",
+      "pos": [
+        700,
+        530
+      ],
+      "size": [
+        225,
+        85
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "security-group",
+      "label": "Untrusted browser input",
+      "wraps": [
+        "farmer-client"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "security-group",
+      "label": "Local application · backend secrets and guarded storage",
+      "wraps": [
+        "http-service",
+        "advice-service",
+        "case-store",
+        "access-checks",
+        "local-evidence",
+        "human-review",
+        "private-images"
+      ],
+      "pad": 30
+    },
+    {
+      "kind": "security-group",
+      "label": "External provider boundary",
+      "wraps": [
+        "weather-provider",
+        "model-provider"
+      ],
+      "pad": 25
+    }
+  ],
+  "connections": [
+    {
+      "id": "submit-case",
+      "from": "farmer-client",
+      "to": "http-service",
+      "label": "HTTP / cookie",
+      "variant": "emphasis"
+    },
+    {
+      "id": "assemble-case",
+      "from": "http-service",
+      "to": "advice-service",
+      "label": "Bounded context",
+      "variant": "emphasis"
+    },
+    {
+      "id": "save-result",
+      "from": "advice-service",
+      "to": "case-store",
+      "label": "Validated case",
+      "variant": "emphasis"
+    },
+    {
+      "id": "enforce-access",
+      "from": "access-checks",
+      "to": "http-service",
+      "label": "Role / owner",
+      "variant": "security",
+      "labelDy": 24
+    },
+    {
+      "id": "retrieve-evidence",
+      "from": "local-evidence",
+      "to": "advice-service",
+      "label": "Scoped evidence",
+      "labelDy": 24
+    },
+    {
+      "id": "review-store",
+      "from": "human-review",
+      "to": "case-store",
+      "label": "Reviews / receipts",
+      "labelDy": 24
+    },
+    {
+      "id": "retain-photo",
+      "from": "case-store",
+      "to": "private-images",
+      "label": "Private file reference",
+      "labelDy": 24
+    },
+    {
+      "id": "fetch-weather",
+      "from": "http-service",
+      "to": "weather-provider",
+      "label": "HTTPS · optional",
+      "variant": "dashed",
+      "labelDy": 24
+    },
+    {
+      "id": "call-gemini",
+      "from": "advice-service",
+      "to": "model-provider",
+      "label": "Async SDK",
+      "variant": "dashed",
+      "labelDy": 24
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Primary case path",
+      "items": [
+        "API orchestrates evidence → validated advice → SQLite. Responses and officer feeds return through the same API."
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Trust and scope",
+      "items": [
+        "Demo roles only. Gemini receives submitted photos; officer retention requires consent. State exchange is local and excludes identity and photos."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "External dependencies",
+      "items": [
+        "Public SoilGrids, NASA POWER and archived Sentinel-2 references retain scope labels. Fixtures never reach Gemini. Docker is verified; hosting is pending."
+      ]
+    }
+  ]
+}

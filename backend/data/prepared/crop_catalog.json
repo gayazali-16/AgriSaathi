@@ -1,0 +1,98 @@
+[
+  {
+    "crop": "Maize",
+    "district": "Krishna",
+    "historical_record_rows": 112,
+    "interpretation": "Historical dataset presence only; not a suitability score or current recommendation.",
+    "seasons": [
+      "Kharif",
+      "Rabi",
+      "Zaid"
+    ],
+    "state": "Andhra Pradesh",
+    "year_range": [
+      1980,
+      2017
+    ]
+  },
+  {
+    "crop": "Rice",
+    "district": "Krishna",
+    "historical_record_rows": 112,
+    "interpretation": "Historical dataset presence only; not a suitability score or current recommendation.",
+    "seasons": [
+      "Kharif",
+      "Rabi",
+      "Zaid"
+    ],
+    "state": "Andhra Pradesh",
+    "year_range": [
+      1980,
+      2017
+    ]
+  },
+  {
+    "crop": "Maize",
+    "district": "Khammam",
+    "historical_record_rows": 112,
+    "interpretation": "Historical dataset presence only; not a suitability score or current recommendation.",
+    "seasons": [
+      "Kharif",
+      "Rabi",
+      "Zaid"
+    ],
+    "state": "Telangana",
+    "year_range": [
+      1980,
+      2017
+    ]
+  },
+  {
+    "crop": "Rice",
+    "district": "Khammam",
+    "historical_record_rows": 112,
+    "interpretation": "Historical dataset presence only; not a suitability score or current recommendation.",
+    "seasons": [
+      "Kharif",
+      "Rabi",
+      "Zaid"
+    ],
+    "state": "Telangana",
+    "year_range": [
+      1980,
+      2017
+    ]
+  },
+  {
+    "crop": "Maize",
+    "district": "Nalgonda",
+    "historical_record_rows": 112,
+    "interpretation": "Historical dataset presence only; not a suitability score or current recommendation.",
+    "seasons": [
+      "Kharif",
+      "Rabi",
+      "Zaid"
+    ],
+    "state": "Telangana",
+    "year_range": [
+      1980,
+      2017
+    ]
+  },
+  {
+    "crop": "Rice",
+    "district": "Nalgonda",
+    "historical_record_rows": 112,
+    "interpretation": "Historical dataset presence only; not a suitability score or current recommendation.",
+    "seasons": [
+      "Kharif",
+      "Rabi",
+      "Zaid"
+    ],
+    "state": "Telangana",
+    "year_range": [
+      1980,
+      2017
+    ]
+  }
+]

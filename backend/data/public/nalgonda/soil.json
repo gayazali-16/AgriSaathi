@@ -1,0 +1,39 @@
+{
+  "district": "Nalgonda",
+  "state": "Telangana",
+  "reference_point": {
+    "latitude": 17.0,
+    "longitude": 79.3
+  },
+  "spatial_scope": "Selected reference point/window near the named district; not a district aggregate or registered farmer plot.",
+  "id": "soilgrids-nalgonda-0-5cm",
+  "status": "available",
+  "data_type": "modelled_soil_estimate",
+  "verification_status": "verified_public_estimate",
+  "soil_class": "SoilGrids modelled topsoil (0–5 cm)",
+  "metrics": {
+    "ph": 7.1,
+    "organic_carbon_percent": 1.8
+  },
+  "prediction_interval_90_percent": {
+    "ph": [
+      5.1,
+      8.7
+    ],
+    "organic_carbon_percent": [
+      0.26,
+      3.99
+    ]
+  },
+  "observed_at": null,
+  "source_title": "ISRIC SoilGrids 2.0",
+  "source_url": "https://docs.isric.org/globaldata/soilgrids/SoilGrids_faqs.html",
+  "request_url": "https://rest.isric.org/soilgrids/v2.0/properties/query?lon=79.3&lat=17.0&property=phh2o&property=soc&depth=0-5cm&value=mean&value=Q0.05&value=Q0.95",
+  "report_id": null,
+  "live": false,
+  "processing_method": "Mean and 5th/95th quantile at 0–5 cm. Provider storage scaling applied; SOC g/kg converted to percent.",
+  "warning": "Modelled 250 m soil estimate at a reference point, not a farmer's soil test. N/P/K availability and EC are unavailable. Wide prediction intervals limit interpretation.",
+  "provenance_notes": "Prediction dataset, not a dated laboratory observation. Download date is not sample date.",
+  "raw_sha256": "0d46ea1b50f76fabc566e845e0b47a7bffe5c11a3179972500193517fdd1850a",
+  "downloaded_at": "2026-09-27T12:39:54.672564+00:00"
+}

@@ -1,0 +1,37 @@
+{
+  "district": "Khammam",
+  "state": "Telangana",
+  "reference_point": {
+    "latitude": 17.25,
+    "longitude": 80.12
+  },
+  "spatial_scope": "Selected reference point/window near the named district; not a district aggregate or registered farmer plot.",
+  "id": "nasa-power-khammam-202508",
+  "status": "available",
+  "type": "historical_climate_estimate",
+  "label": "NASA POWER August 2025 climate reference",
+  "period": "2025-08-01 to 2025-08-31",
+  "units": {
+    "T2M": "C",
+    "RH2M": "%",
+    "PRECTOTCORR": "mm/day"
+  },
+  "values": {
+    "mean_temperature_c": 26.92,
+    "mean_atmospheric_humidity_percent": 85.04,
+    "total_precipitation_mm": 374.68
+  },
+  "valid_days": {
+    "T2M": 31,
+    "RH2M": 31,
+    "PRECTOTCORR": 31
+  },
+  "verification_status": "verified_public_estimate",
+  "source_title": "NASA POWER daily meteorology",
+  "source_url": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+  "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?longitude=80.12&latitude=17.25&parameters=T2M%2CRH2M%2CPRECTOTCORR&community=AG&start=20250801&end=20250831&format=JSON",
+  "warning": "Historical gridded meteorology at a reference point; not today's weather, a forecast, or a farm rain gauge.",
+  "live": false,
+  "raw_sha256": "5af089eb8be2248913e591b3cc70b800ca1a0d1f70bc4641a85f798826c39819",
+  "downloaded_at": "2026-09-27T12:40:07.283715+00:00"
+}

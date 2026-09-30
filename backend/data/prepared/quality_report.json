@@ -1,0 +1,48 @@
+{
+  "decisions": [
+    "Historical temperature, atmospheric relative humidity, and rainfall are summarized only as district context.",
+    "Rows duplicated across selected crops are collapsed when year, season, and all three climate values match.",
+    "No suspect production, yield, NPK, area, irrigation, or prescription values are emitted to the runtime artifact."
+  ],
+  "districts": [
+    {
+      "all_crop_rows": 3920,
+      "deduplicated_climate_points": 112,
+      "district": "Krishna",
+      "rice_maize_rows": 224,
+      "rows_missing_one_or_more_climate_fields": 0,
+      "state": "Andhra Pradesh",
+      "year_range": [
+        1980,
+        2017
+      ]
+    },
+    {
+      "all_crop_rows": 3696,
+      "deduplicated_climate_points": 112,
+      "district": "Khammam",
+      "rice_maize_rows": 224,
+      "rows_missing_one_or_more_climate_fields": 0,
+      "state": "Telangana",
+      "year_range": [
+        1980,
+        2017
+      ]
+    },
+    {
+      "all_crop_rows": 2800,
+      "deduplicated_climate_points": 112,
+      "district": "Nalgonda",
+      "rice_maize_rows": 224,
+      "rows_missing_one_or_more_climate_fields": 0,
+      "state": "Telangana",
+      "year_range": [
+        1980,
+        2017
+      ]
+    }
+  ],
+  "selected_district_rows": 10416,
+  "selected_rice_maize_rows": 672,
+  "source_rows": 1194806
+}

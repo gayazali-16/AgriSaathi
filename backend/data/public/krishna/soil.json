@@ -1,0 +1,39 @@
+{
+  "district": "Krishna",
+  "state": "Andhra Pradesh",
+  "reference_point": {
+    "latitude": 16.3,
+    "longitude": 81.05
+  },
+  "spatial_scope": "Selected reference point/window near the named district; not a district aggregate or registered farmer plot.",
+  "id": "soilgrids-krishna-0-5cm",
+  "status": "available",
+  "data_type": "modelled_soil_estimate",
+  "verification_status": "verified_public_estimate",
+  "soil_class": "SoilGrids modelled topsoil (0–5 cm)",
+  "metrics": {
+    "ph": 6.8,
+    "organic_carbon_percent": 2.23
+  },
+  "prediction_interval_90_percent": {
+    "ph": [
+      4.8,
+      9.1
+    ],
+    "organic_carbon_percent": [
+      0.25,
+      6.22
+    ]
+  },
+  "observed_at": null,
+  "source_title": "ISRIC SoilGrids 2.0",
+  "source_url": "https://docs.isric.org/globaldata/soilgrids/SoilGrids_faqs.html",
+  "request_url": "https://rest.isric.org/soilgrids/v2.0/properties/query?lon=81.05&lat=16.3&property=phh2o&property=soc&depth=0-5cm&value=mean&value=Q0.05&value=Q0.95",
+  "report_id": null,
+  "live": false,
+  "processing_method": "Mean and 5th/95th quantile at 0–5 cm. Provider storage scaling applied; SOC g/kg converted to percent.",
+  "warning": "Modelled 250 m soil estimate at a reference point, not a farmer's soil test. N/P/K availability and EC are unavailable. Wide prediction intervals limit interpretation.",
+  "provenance_notes": "Prediction dataset, not a dated laboratory observation. Download date is not sample date.",
+  "raw_sha256": "f568126bc6947c6ba14c24f768f55d3c338aeed9582e4c14888f5f0baf9d10a5",
+  "downloaded_at": "2026-09-27T12:40:16.597775+00:00"
+}

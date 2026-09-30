@@ -1,0 +1,83 @@
+[
+  {
+    "id": "soil-nalgonda-shc-2024",
+    "state": "Telangana",
+    "district": "Nalgonda",
+    "status": "available",
+    "verification_status": "unverified_demo_fixture",
+    "data_type": "recorded_sample_observation",
+    "source_title": "Soil Health Card Portal (DAC&FW) State Dashboard Cycle-II & ICAR-NBSS&LUP",
+    "source_url": "https://soilhealth.dac.gov.in/soil-health-dashboard",
+    "report_id": "SHC-TS-NAL-2024-C2",
+    "geographic_bounds": [16.85, 79.05, 17.35, 79.55],
+    "observed_at": "2024-05-10",
+    "soil_class": "Red Sandy Loam (Chalka soils / Alfisols)",
+    "spatial_scope": "District composite benchmark; not the farmer's specific plot.",
+    "processing_method": "District composite mean of representative GPS grid soil samples (Cycle-II sampling: 2.5 ha irrigated / 10 ha rainfed grid); standard wet chemistry methods (Walkley-Black for OC, Alkaline Permanganate for N, Bray/Olsen for P, Ammonium Acetate for K).",
+    "provenance_notes": "Unverified demo fixture based on published district composite benchmarks from Soil Health Card Portal; not a verified plot-level soil test report.",
+    "metrics": {
+      "ph": 7.2,
+      "electrical_conductivity_ds_m": 0.35,
+      "organic_carbon_percent": 0.48,
+      "available_nitrogen_kg_ha": 210.0,
+      "available_phosphorus_kg_ha": 18.5,
+      "available_potassium_kg_ha": 265.0
+    },
+    "warning": "District-level benchmark. Individual plot fertility varies; do not base chemical fertilizer application on composite values without a plot soil test.",
+    "live": false
+  },
+  {
+    "id": "soil-khammam-shc-2024",
+    "state": "Telangana",
+    "district": "Khammam",
+    "status": "available",
+    "verification_status": "unverified_demo_fixture",
+    "data_type": "recorded_sample_observation",
+    "source_title": "Soil Health Card Portal (DAC&FW) State Dashboard Cycle-II & ICAR-NBSS&LUP",
+    "source_url": "https://soilhealth.dac.gov.in/soil-health-dashboard",
+    "report_id": "SHC-TS-KHM-2024-C2",
+    "geographic_bounds": [17.10, 80.05, 17.55, 80.45],
+    "observed_at": "2024-05-18",
+    "soil_class": "Deep Black Cotton Soil (Vertisols) and Alluvial Red sandy loams",
+    "spatial_scope": "District composite benchmark; not the farmer's specific plot.",
+    "processing_method": "District composite mean of Cycle-II grid samples; ICAR-NBSS&LUP benchmark soil series analysis for Vertic Alfisols.",
+    "provenance_notes": "Unverified demo fixture based on published district composite benchmarks from Soil Health Card Portal; not a verified plot-level soil test report.",
+    "metrics": {
+      "ph": 7.8,
+      "electrical_conductivity_ds_m": 0.42,
+      "organic_carbon_percent": 0.55,
+      "available_nitrogen_kg_ha": 235.0,
+      "available_phosphorus_kg_ha": 22.0,
+      "available_potassium_kg_ha": 310.0
+    },
+    "warning": "District-level benchmark. Deep black soils retain moisture longer but drainage must be assessed at the field level.",
+    "live": false
+  },
+  {
+    "id": "soil-krishna-shc-2024",
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "status": "available",
+    "verification_status": "unverified_demo_fixture",
+    "data_type": "recorded_sample_observation",
+    "source_title": "Soil Health Card Portal (DAC&FW) State Dashboard Cycle-II & ICAR-NBSS&LUP",
+    "source_url": "https://soilhealth.dac.gov.in/soil-health-dashboard",
+    "report_id": "SHC-AP-KRI-2024-C2",
+    "geographic_bounds": [15.90, 80.50, 16.50, 81.25],
+    "observed_at": "2024-04-25",
+    "soil_class": "Deltaic Coastal Alluvial and Clay Loam soils",
+    "spatial_scope": "District composite benchmark; not the farmer's specific plot.",
+    "processing_method": "District coastal alluvium composite grid analysis from AP Soil Health Portal Cycle-II; standard Olsen P and neutral ammonium acetate K extraction.",
+    "provenance_notes": "Unverified demo fixture based on published district composite benchmarks from Soil Health Card Portal; not a verified plot-level soil test report.",
+    "metrics": {
+      "ph": 7.5,
+      "electrical_conductivity_ds_m": 0.85,
+      "organic_carbon_percent": 0.62,
+      "available_nitrogen_kg_ha": 250.0,
+      "available_phosphorus_kg_ha": 26.0,
+      "available_potassium_kg_ha": 340.0
+    },
+    "warning": "District-level deltaic benchmark. Near-coastal areas may have localized salinity; requires on-site testing.",
+    "live": false
+  }
+]

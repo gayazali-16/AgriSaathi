@@ -1,0 +1,158 @@
+[
+  {
+    "id": "icar-rice-water-01",
+    "crop": "Rice",
+    "topic": "water_management",
+    "title": "Check whether water-saving rice practices fit this field",
+    "practice": "Ask a local extension officer whether alternate wetting and drying fits this field's irrigation system and soil. Do not change irrigation from this app alone.",
+    "why": "ICAR describes alternate wetting and drying as an option in suitable rice irrigation settings; field water control and soil determine fit.",
+    "source_title": "Alternate wetting and drying irrigation technology in rice",
+    "source_url": "https://epubs.icar.org.in/index.php/IndFarm/article/view/105779",
+    "evidence_scope": "Research reference; not a field-specific irrigation prescription.",
+    "risk": "low",
+    "translations": {
+      "hi": {
+        "title": "खेत के लिए पानी बचाने वाली धान पद्धति की उपयुक्तता जाँचें",
+        "practice": "स्थानीय कृषि अधिकारी से पूछें कि बारी-बारी से पानी देना इस खेत की सिंचाई और मिट्टी के लिए ठीक है या नहीं। केवल इस ऐप के आधार पर सिंचाई न बदलें।",
+        "why": "ICAR इसे कुछ धान सिंचाई स्थितियों में पानी बचाने का विकल्प बताता है। खेत में पानी पर नियंत्रण और मिट्टी के अनुसार उपयुक्तता बदलती है।",
+        "evidence_scope": "शोध संदर्भ; यह खेत के लिए तय सिंचाई मात्रा नहीं है।"
+      },
+      "te": {
+        "title": "ఈ పొలానికి నీరు ఆదా చేసే వరి పద్ధతి సరిపోతుందో చూడండి",
+        "practice": "ఈ పొలం మట్టి, నీటిపారుదల విధానానికి మారుమారుగా నీరు పెట్టడం సరిపోతుందో స్థానిక వ్యవసాయ అధికారిని అడగండి. ఈ యాప్ ఆధారంగా మాత్రమే నీరు పెట్టే విధానం మార్చవద్దు.",
+        "why": "కొన్ని వరి సాగు పరిస్థితుల్లో ఇది నీరు ఆదా చేసే మార్గమని ICAR వివరిస్తుంది. పొలంలో నీటి నియంత్రణ, మట్టిని బట్టి సరిపోతుందో మారుతుంది.",
+        "evidence_scope": "పరిశోధన సమాచారం మాత్రమే; ఈ పొలానికి నిర్ణయించిన నీటి సిఫార్సు కాదు."
+      }
+    }
+  },
+  {
+    "id": "soilhealth-fertilizer-01",
+    "crops": ["Rice", "Maize"],
+    "topic": "nutrient_management",
+    "title": "Use a soil test before choosing fertilizer amounts",
+    "practice": "Use a recent soil test or Soil Health Card and a local crop recommendation to choose fertilizer type and amount. This app has no verified plot-level N/P/K result, so it cannot calculate a dose.",
+    "why": "The Soil Health Card programme bases crop fertilizer advice on the tested nutrient status of a farmer's holding.",
+    "source_title": "Soil Health Card Scheme: frequently asked questions",
+    "source_url": "https://support.soilhealth.dac.gov.in/kb/faq.php?id=39",
+    "evidence_scope": "Government guidance on soil-test-based fertilizer advice; no sample-field dose is supplied.",
+    "risk": "low",
+    "translations": {
+      "hi": {
+        "title": "खाद की मात्रा तय करने से पहले मिट्टी की जाँच कराएँ",
+        "practice": "खाद का प्रकार और मात्रा चुनने के लिए हाल की मिट्टी जाँच या मृदा स्वास्थ्य कार्ड और स्थानीय फसल सलाह लें। इस ऐप में खेत के N/P/K के पुष्ट नतीजे नहीं हैं, इसलिए यह मात्रा तय नहीं कर सकता।",
+        "why": "मृदा स्वास्थ्य कार्ड योजना किसान के खेत की जाँची गई पोषक स्थिति के आधार पर फसल के लिए खाद की सलाह देती है।",
+        "evidence_scope": "मिट्टी जाँच पर आधारित सरकारी मार्गदर्शन; इस नमूना खेत के लिए मात्रा उपलब्ध नहीं है।"
+      },
+      "te": {
+        "title": "ఎరువు మోతాదు ఎంచుకునే ముందు మట్టి పరీక్ష చేయించండి",
+        "practice": "ఎరువు రకం, మోతాదు కోసం తాజా మట్టి పరీక్ష లేదా సాయిల్ హెల్త్ కార్డు, స్థానిక పంట సలహా చూడండి. ఈ యాప్‌లో పొలం స్థాయి N/P/K నిర్ధారిత ఫలితాలు లేవు; కాబట్టి మోతాదు లెక్కించలేదు.",
+        "why": "సాయిల్ హెల్త్ కార్డు పథకం రైతు పొలం పరీక్షించిన పోషకాల స్థితి ఆధారంగా పంటకు ఎరువు సలహా ఇస్తుంది.",
+        "evidence_scope": "మట్టి పరీక్ష ఆధారిత ప్రభుత్వ సమాచారం; ఈ నమూనా పొలానికి మోతాదు ఇవ్వదు."
+      }
+    }
+  },
+  {
+    "id": "icar-crop-rotation-01",
+    "crops": ["Rice", "Maize"],
+    "topic": "crop_rotation",
+    "title": "Check local conditions before choosing the next crop",
+    "practice": "Ask an extension officer about a locally tested crop sequence. Consider the sowing window, water, soil and available seed; historical crop records alone do not show what will suit this field.",
+    "why": "ICAR-CRIDA discusses crop rotation and green manuring as soil-health practices, but this reference does not prescribe a sequence for this sample field.",
+    "source_title": "ICAR-CRIDA farmer outreach on soil health management",
+    "source_url": "https://www.icar.gov.in/index.php/hi/node/25106",
+    "evidence_scope": "General soil-health context; no district- or field-specific rotation schedule.",
+    "risk": "low",
+    "translations": {
+      "hi": {
+        "title": "अगली फसल चुनने से पहले स्थानीय स्थिति जाँचें",
+        "practice": "स्थानीय कृषि अधिकारी से यहाँ आज़माए गए फसल क्रम के बारे में पूछें। बुवाई का समय, पानी, मिट्टी और उपलब्ध बीज देखें; पुराने फसल रिकॉर्ड से खेत की उपयुक्तता तय नहीं होती।",
+        "why": "ICAR-CRIDA मिट्टी की सेहत के लिए फसल चक्र और हरी खाद पर जानकारी देता है, पर यह स्रोत इस नमूना खेत के लिए फसल क्रम तय नहीं करता।",
+        "evidence_scope": "मिट्टी की सेहत का सामान्य संदर्भ; जिले या खेत के लिए फसल चक्र कार्यक्रम नहीं।"
+      },
+      "te": {
+        "title": "తర్వాతి పంటను ఎంచుకునే ముందు స్థానిక పరిస్థితులు చూడండి",
+        "practice": "ఈ ప్రాంతంలో పరీక్షించిన పంట మార్పిడి క్రమం గురించి వ్యవసాయ అధికారిని అడగండి. విత్తే సమయం, నీరు, మట్టి, విత్తనాల లభ్యత చూడండి; పాత పంట రికార్డులు ఈ పొలానికి ఏది సరిపోతుందో చెప్పవు.",
+        "why": "మట్టి ఆరోగ్యం కోసం పంట మార్పిడి, పచ్చిరొట్టపై ICAR-CRIDA సమాచారం ఇస్తుంది. ఈ మూలం నమూనా పొలానికి పంట క్రమాన్ని నిర్ణయించదు.",
+        "evidence_scope": "మట్టి ఆరోగ్యంపై సాధారణ సమాచారం; జిల్లా లేదా పొలానికి ప్రత్యేక పంట క్రమం కాదు."
+      }
+    }
+  },
+  {
+    "id": "icar-maize-intercrop-01",
+    "crop": "Maize",
+    "topic": "intercropping",
+    "title": "Check whether intercropping fits this maize field",
+    "practice": "ICAR research has studied maize with pulses, but the best pairing and row spacing depend on local soil, rainfall, seed and planting dates. Ask for a recommendation tested in this district.",
+    "why": "The cited study tested rainfed Vertisols in north-west Madhya Pradesh; its crop ratios are not validated for this Telangana sample field.",
+    "source_title": "Maize-based intercropping systems with pulses under rainfed condition",
+    "source_url": "https://epubs.icar.org.in/index.php/IJAgS/article/view/17993",
+    "evidence_scope": "Research from north-west Madhya Pradesh; not a Telangana or Andhra Pradesh planting prescription.",
+    "risk": "low",
+    "translations": {
+      "hi": {
+        "title": "देखें कि इस मक्का खेत में मिश्रित खेती उपयुक्त है या नहीं",
+        "practice": "ICAR ने मक्का के साथ दाल वाली फसलों पर शोध किया है, पर सही फसल और कतार दूरी स्थानीय मिट्टी, बारिश, बीज और बुवाई के समय पर निर्भर है। इस जिले में जाँची गई सलाह लें।",
+        "why": "यह शोध उत्तर-पश्चिम मध्य प्रदेश की वर्षा-आधारित काली मिट्टी पर था; इसकी कतारें तेलंगाना के इस नमूना खेत के लिए प्रमाणित नहीं हैं।",
+        "evidence_scope": "उत्तर-पश्चिम मध्य प्रदेश का शोध; तेलंगाना या आंध्र प्रदेश के लिए बुवाई की सलाह नहीं।"
+      },
+      "te": {
+        "title": "ఈ మొక్కజొన్న పొలానికి అంతర పంట సరిపోతుందో చూడండి",
+        "practice": "మొక్కజొన్నతో పప్పుధాన్యాలపై ICAR పరిశోధన చేసింది. సరైన పంట జోడీ, వరుసల దూరం స్థానిక మట్టి, వర్షం, విత్తనాలు, విత్తే సమయంపై ఆధారపడతాయి. ఈ జిల్లాలో పరీక్షించిన సలహా తీసుకోండి.",
+        "why": "ఈ పరిశోధన వాయవ్య మధ్యప్రదేశ్‌లోని వర్షాధార నల్లమట్టిపై జరిగింది; దాని వరుసల పద్ధతి తెలంగాణ నమూనా పొలానికి నిర్ధారించబడలేదు.",
+        "evidence_scope": "వాయవ్య మధ్యప్రదేశ్ పరిశోధన; తెలంగాణ లేదా ఆంధ్రప్రదేశ్‌కు నేరుగా వర్తించే నాటే సలహా కాదు."
+      }
+    }
+  },
+  {
+    "id": "icar-rice-ipm-01",
+    "crop": "Rice",
+    "topic": "integrated_pest_management",
+    "title": "Record symptoms before choosing a pest-control action",
+    "practice": "Note when the change started and which plants are affected. Ask an extension officer to confirm the cause before applying a pesticide or changing nutrient inputs.",
+    "why": "ICAR describes integrated pest management as combining methods according to the crop, pest and field conditions; this case does not establish a pest or field diagnosis.",
+    "source_title": "Integrated Pest Management: A Sustainable Approach to Responsible Pest Management",
+    "source_url": "https://icar.gov.in/en/integrated-pest-management-sustainable-approach-responsible-pest-management",
+    "evidence_scope": "General IPM guidance; it does not diagnose a particular field or image.",
+    "risk": "low",
+    "translations": {
+      "hi": {
+        "title": "कीट नियंत्रण से पहले लक्षण दर्ज करें",
+        "practice": "लिखें कि बदलाव कब शुरू हुआ और कितने पौधे प्रभावित हैं। कीटनाशक डालने या पोषक तत्व बदलने से पहले कृषि अधिकारी से कारण की पुष्टि करें।",
+        "why": "ICAR के अनुसार एकीकृत कीट प्रबंधन में फसल, कीट और खेत की स्थिति देखकर तरीके मिलाए जाते हैं; यह केस कीट या बीमारी की पुष्टि नहीं करता।",
+        "evidence_scope": "कीट प्रबंधन की सामान्य जानकारी; किसी खेत या तस्वीर का निदान नहीं।"
+      },
+      "te": {
+        "title": "పురుగు నియంత్రణకు ముందు లక్షణాలను నమోదు చేయండి",
+        "practice": "మార్పు ఎప్పుడు మొదలైందో, ఎన్ని మొక్కలకు ఉందో రాయండి. పురుగుమందు వేయడానికి లేదా పోషకాలు మార్చడానికి ముందు అధికారితో కారణం నిర్ధారించండి.",
+        "why": "పంట, పురుగు, పొలం పరిస్థితిని బట్టి పద్ధతులను కలపాలని ICAR సమగ్ర పురుగు నిర్వహణ వివరిస్తుంది; ఈ కేసు పురుగు లేదా వ్యాధిని నిర్ధారించదు.",
+        "evidence_scope": "సాధారణ పురుగు నిర్వహణ సమాచారం; ప్రత్యేక పొలం లేదా చిత్ర నిర్ధారణ కాదు."
+      }
+    }
+  },
+  {
+    "id": "icar-maize-ipm-01",
+    "crop": "Maize",
+    "topic": "integrated_pest_management",
+    "title": "Confirm the cause before crop treatment",
+    "practice": "Keep a dated note of the crop change and ask an extension officer to confirm the cause before using a chemical treatment.",
+    "why": "ICAR guidance says pest management depends on crop, pest and field conditions; the supplied dataset cannot diagnose a maize pest or set a treatment dose.",
+    "source_title": "Integrated Pest Management: A Sustainable Approach to Responsible Pest Management",
+    "source_url": "https://icar.gov.in/en/integrated-pest-management-sustainable-approach-responsible-pest-management",
+    "evidence_scope": "General IPM guidance; no pesticide or dosage recommendation.",
+    "risk": "low",
+    "translations": {
+      "hi": {
+        "title": "फसल पर उपचार से पहले कारण की पुष्टि करें",
+        "practice": "फसल में बदलाव की तारीख लिखें। रासायनिक उपचार से पहले कृषि अधिकारी से कारण की पुष्टि करें।",
+        "why": "ICAR के अनुसार कीट प्रबंधन फसल, कीट और खेत की स्थिति पर निर्भर है; उपलब्ध डेटा मक्का के कीट का निदान या मात्रा तय नहीं करता।",
+        "evidence_scope": "कीट प्रबंधन की सामान्य जानकारी; कीटनाशक या मात्रा की सलाह नहीं।"
+      },
+      "te": {
+        "title": "పంటకు చికిత్స చేసే ముందు కారణం నిర్ధారించండి",
+        "practice": "పంటలో మార్పు వచ్చిన తేదీని రాయండి. రసాయన చికిత్సకు ముందు వ్యవసాయ అధికారితో కారణం నిర్ధారించండి.",
+        "why": "పురుగు నిర్వహణ పంట, పురుగు, పొలం పరిస్థితిపై ఆధారపడుతుందని ICAR చెబుతుంది; అందుబాటులోని డేటా మొక్కజొన్న పురుగు లేదా మోతాదును నిర్ధారించదు.",
+        "evidence_scope": "సాధారణ పురుగు నిర్వహణ సమాచారం; పురుగుమందు లేదా మోతాదు సలహా కాదు."
+      }
+    }
+  }
+]

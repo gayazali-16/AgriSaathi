@@ -1,0 +1,37 @@
+{
+  "district": "Nalgonda",
+  "state": "Telangana",
+  "reference_point": {
+    "latitude": 17.0,
+    "longitude": 79.3
+  },
+  "spatial_scope": "Selected reference point/window near the named district; not a district aggregate or registered farmer plot.",
+  "id": "nasa-power-nalgonda-202508",
+  "status": "available",
+  "type": "historical_climate_estimate",
+  "label": "NASA POWER August 2025 climate reference",
+  "period": "2025-08-01 to 2025-08-31",
+  "units": {
+    "T2M": "C",
+    "RH2M": "%",
+    "PRECTOTCORR": "mm/day"
+  },
+  "values": {
+    "mean_temperature_c": 27.13,
+    "mean_atmospheric_humidity_percent": 81.66,
+    "total_precipitation_mm": 304.06
+  },
+  "valid_days": {
+    "T2M": 31,
+    "RH2M": 31,
+    "PRECTOTCORR": 31
+  },
+  "verification_status": "verified_public_estimate",
+  "source_title": "NASA POWER daily meteorology",
+  "source_url": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+  "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?longitude=79.3&latitude=17.0&parameters=T2M%2CRH2M%2CPRECTOTCORR&community=AG&start=20250801&end=20250831&format=JSON",
+  "warning": "Historical gridded meteorology at a reference point; not today's weather, a forecast, or a farm rain gauge.",
+  "live": false,
+  "raw_sha256": "d3d15113e8dfce8c2b3e2a63b50f7a0492b9fa25ab9279c1af9917958e2ba5ef",
+  "downloaded_at": "2026-09-27T12:39:55.686215+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "request_url": "https://earth-search.aws.element84.com/v1/search?collections=sentinel-2-l2a&bbox=81.045%2C16.295%2C81.05499999999999%2C16.305&datetime=2025-08-01T00%3A00%3A00Z%2F2025-10-31T23%3A59%3A59Z&limit=30",
+  "candidate_count_on_first_page": 30,
+  "selected_scene_id": "S2C_44QND_20251006_1_L2A",
+  "selection": "Lowest scene cloud cover in the first returned candidate page; bounded point search only."
+}

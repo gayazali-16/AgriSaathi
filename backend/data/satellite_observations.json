@@ -1,0 +1,80 @@
+[
+  {
+    "id": "satellite-nalgonda-s2-2026-08",
+    "state": "Telangana",
+    "district": "Nalgonda",
+    "status": "available",
+    "verification_status": "unverified_demo_fixture",
+    "data_type": "recorded_satellite_observation",
+    "source_title": "Sentinel-2 MSI BOA Surface Reflectance & ISRO Bhuvan NRSC Agricultural Drought Monitoring",
+    "source_url": "https://dataspace.copernicus.eu/browser/?zoom=11&lat=17.05&lng=79.27",
+    "scene_id": "S2B_MSIL2A_20260828T051519_N0511_R019_T44QME_20260828T073215",
+    "geographic_bounds": [16.85, 79.05, 17.35, 79.55],
+    "observed_at": "2026-08-28T05:15:00Z",
+    "sensor": "Sentinel-2 MSI 10m",
+    "spatial_scope": "10m pixel composite for Nalgonda agricultural zone (Tile 44QME); not farmer field boundary polygon.",
+    "processing_method": "Copernicus Sentinel-2 Level-2A Bottom-Of-Atmosphere (BOA) surface reflectance processed via Sen2Cor; cloud masking with scene classification layer (SCL < 4, > 7 excluded); NDVI calculated as (B08 - B04)/(B08 + B04) aggregated over agricultural cropland mask (ESA WorldCover 2021 class 40).",
+    "provenance_notes": "Unverified demo fixture based on Sentinel-2 Level-2A regional tile composite; not a plot-level polygon extraction.",
+    "metrics": {
+      "mean_ndvi": 0.64,
+      "ndvi_anomaly_vs_normal": "+0.03",
+      "cloud_cover_percent": 8.0,
+      "vegetation_condition_index_vci": 72.0
+    },
+    "observation_vs_inference": "Observation: Multispectral NIR/Red reflectance ratio (NDVI = 0.64). Inference: Typical vegetative vigor for irrigated Kharif rice. Remote sensing cannot distinguish fungal blight, bacterial leaf streak, or pest damage from abiotic stress.",
+    "warning": "Canopy greenness index is aggregated over regional agricultural plots. Cloud contamination and standing water in paddy fields can skew indices. Not a field-level diagnostic.",
+    "live": false
+  },
+  {
+    "id": "satellite-khammam-s2-2026-08",
+    "state": "Telangana",
+    "district": "Khammam",
+    "status": "available",
+    "verification_status": "unverified_demo_fixture",
+    "data_type": "recorded_satellite_observation",
+    "source_title": "Sentinel-2 MSI BOA Surface Reflectance & ISRO Bhuvan NRSC Agricultural Drought Monitoring",
+    "source_url": "https://dataspace.copernicus.eu/browser/?zoom=11&lat=17.25&lng=80.15",
+    "scene_id": "S2A_MSIL2A_20260827T051221_N0511_R019_T44QNF_20260827T081540",
+    "geographic_bounds": [17.10, 80.05, 17.55, 80.45],
+    "observed_at": "2026-08-27T05:12:00Z",
+    "sensor": "Sentinel-2 MSI 10m",
+    "spatial_scope": "10m pixel composite for Khammam maize/paddy belt (Tile 44QNF); not farmer field boundary polygon.",
+    "processing_method": "Copernicus Sentinel-2 Level-2A BOA reflectance (B08, B04) masked using ESA WorldCover cropland mask; mean regional NDVI computed over cloud-free agricultural pixels.",
+    "provenance_notes": "Unverified demo fixture based on Sentinel-2 Level-2A regional tile composite; not a plot-level polygon extraction.",
+    "metrics": {
+      "mean_ndvi": 0.68,
+      "ndvi_anomaly_vs_normal": "+0.05",
+      "cloud_cover_percent": 12.0,
+      "vegetation_condition_index_vci": 78.0
+    },
+    "observation_vs_inference": "Observation: Multispectral NIR/Red reflectance ratio (NDVI = 0.68). Inference: Robust crop vigor in riverine basin. High vigor does not exclude early-stage pest infestation beneath the crop canopy.",
+    "warning": "Canopy reflectance aggregate. Dense canopy saturation limits sensitivity in peak growth stages.",
+    "live": false
+  },
+  {
+    "id": "satellite-krishna-s2-2026-08",
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "status": "available",
+    "verification_status": "unverified_demo_fixture",
+    "data_type": "recorded_satellite_observation",
+    "source_title": "Sentinel-2 MSI BOA Surface Reflectance & ISRO Bhuvan NRSC Agricultural Drought Monitoring",
+    "source_url": "https://dataspace.copernicus.eu/browser/?zoom=11&lat=16.20&lng=80.85",
+    "scene_id": "S2B_MSIL2A_20260829T051839_N0511_R062_T44RPP_20260829T084512",
+    "geographic_bounds": [15.90, 80.50, 16.50, 81.25],
+    "observed_at": "2026-08-29T05:18:00Z",
+    "sensor": "Sentinel-2 MSI 10m",
+    "spatial_scope": "10m pixel composite for Krishna delta rice zone (Tile 44RPP); not farmer field boundary polygon.",
+    "processing_method": "Copernicus Sentinel-2 Level-2A BOA reflectance (B08, B04) over Krishna delta paddy mask; Sen2Cor atmospheric correction.",
+    "provenance_notes": "Unverified demo fixture based on Sentinel-2 Level-2A regional tile composite; not a plot-level polygon extraction.",
+    "metrics": {
+      "mean_ndvi": 0.71,
+      "ndvi_anomaly_vs_normal": "+0.04",
+      "cloud_cover_percent": 6.0,
+      "vegetation_condition_index_vci": 82.0
+    },
+    "observation_vs_inference": "Observation: Multispectral NIR/Red reflectance ratio (NDVI = 0.71). Inference: Intensive deltaic paddy greenness. Reflectance index cannot replace field inspection for stem borer or leaf spot.",
+    "warning": "Canopy reflectance aggregate. Waterlogged paddy conditions can lower spectral response in early tillering.",
+    "live": false
+  }
+]

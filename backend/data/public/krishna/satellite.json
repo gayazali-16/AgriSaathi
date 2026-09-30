@@ -1,0 +1,59 @@
+{
+  "district": "Krishna",
+  "state": "Andhra Pradesh",
+  "reference_point": {
+    "latitude": 16.3,
+    "longitude": 81.05
+  },
+  "spatial_scope": "Selected reference point/window near the named district; not a district aggregate or registered farmer plot.",
+  "id": "sentinel-krishna-S2C_44QND_20251006_1_L2A",
+  "status": "available",
+  "data_type": "recorded_satellite_observation",
+  "verification_status": "verified_public_observation",
+  "sensor": "Sentinel-2 L2A · 1 km reference window",
+  "scene_id": "S2C_44QND_20251006_1_L2A",
+  "observed_at": "2025-10-06T05:14:26.198000Z",
+  "geographic_bounds": {
+    "crs": "EPSG:32644",
+    "bounds": [
+      504840.0,
+      1801640.0,
+      505840.0,
+      1802640.0
+    ]
+  },
+  "metrics": {
+    "mean_ndvi": 0.7006,
+    "valid_pixel_count": 988,
+    "valid_pixel_percent": 9.88
+  },
+  "processing_method": "NDVI=(NIR-Red)/(NIR+Red), asset reflectance scale/offset; SCL classes 4/5 only. SCL nearest-neighbour 20 m to 10 m.",
+  "source_title": "Copernicus Sentinel-2 L2A via Element 84 Earth Search",
+  "source_url": "https://github.com/Element84/earth-search",
+  "request_url": "https://earth-search.aws.element84.com/v1/search?collections=sentinel-2-l2a&bbox=81.045%2C16.295%2C81.05499999999999%2C16.305&datetime=2025-08-01T00%3A00%3A00Z%2F2025-10-31T23%3A59%3A59Z&limit=30",
+  "asset_metadata": {
+    "red": {
+      "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/ND/2025/10/S2C_44QND_20251006_1_L2A/B04.tif",
+      "sha256": "0a428e821e635581300d3e94ae0f90ae3ef8561ecde705e8cfa5c47102f337e1",
+      "scale": 0.0001,
+      "offset": -0.1
+    },
+    "nir": {
+      "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/ND/2025/10/S2C_44QND_20251006_1_L2A/B08.tif",
+      "sha256": "118cef91d823ed84f842d3aae751c18608e290a7d468e8a56873685181699ce2",
+      "scale": 0.0001,
+      "offset": -0.1
+    },
+    "scl": {
+      "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/ND/2025/10/S2C_44QND_20251006_1_L2A/SCL.tif",
+      "sha256": "90a32fe4fcee1ad5c44be9affc6c33de85112c099024e86dcd99cf644162c762",
+      "scale": 0.0001,
+      "offset": 0
+    }
+  },
+  "live": false,
+  "warning": "Archived 2025 reference-area observation, not a current district average or farmer plot. No crop mask; no disease diagnosis, anomaly, or VCI is derived.",
+  "observation_vs_inference": "Observation: reflectance-derived greenness over valid reference-window pixels. It cannot establish crop identity, disease, irrigation need, or nutrient deficiency.",
+  "provenance_notes": "Original STAC metadata and three small raster windows are retained for reproducibility.",
+  "downloaded_at": "2026-09-27T12:50:41.691581+00:00"
+}

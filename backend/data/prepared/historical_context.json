@@ -1,0 +1,290 @@
+[
+  {
+    "district": "Krishna",
+    "evidence_type": "historical_dataset_summary",
+    "median_source_values": {
+      "humidity": 79.0,
+      "rainfall": 886.73,
+      "temperature": 28.71
+    },
+    "missing_climate_row_count": 0,
+    "period": [
+      1981,
+      2017
+    ],
+    "range": {
+      "humidity_source_values": [
+        75.33,
+        83.01
+      ],
+      "rainfall_source_values": [
+        510.91,
+        1451.67
+      ],
+      "temperature_source_values": [
+        28.19,
+        29.34
+      ]
+    },
+    "season": "Kharif",
+    "state": "Andhra Pradesh",
+    "unique_climate_points_after_deduplication": 37,
+    "warning": "Historical district context deduplicated from selected crop rows; it is not a current forecast or a field measurement."
+  },
+  {
+    "district": "Krishna",
+    "evidence_type": "historical_dataset_summary",
+    "median_source_values": {
+      "humidity": 73.86,
+      "rainfall": 109.27,
+      "temperature": 25.58
+    },
+    "missing_climate_row_count": 0,
+    "period": [
+      1980,
+      2017
+    ],
+    "range": {
+      "humidity_source_values": [
+        70.36,
+        78.56
+      ],
+      "rainfall_source_values": [
+        18.07,
+        545.64
+      ],
+      "temperature_source_values": [
+        24.69,
+        26.32
+      ]
+    },
+    "season": "Rabi",
+    "state": "Andhra Pradesh",
+    "unique_climate_points_after_deduplication": 38,
+    "warning": "Historical district context deduplicated from selected crop rows; it is not a current forecast or a field measurement."
+  },
+  {
+    "district": "Krishna",
+    "evidence_type": "historical_dataset_summary",
+    "median_source_values": {
+      "humidity": 73.98,
+      "rainfall": 43.55,
+      "temperature": 29.52
+    },
+    "missing_climate_row_count": 0,
+    "period": [
+      1981,
+      2017
+    ],
+    "range": {
+      "humidity_source_values": [
+        71.66,
+        77.6
+      ],
+      "rainfall_source_values": [
+        0.81,
+        288.96
+      ],
+      "temperature_source_values": [
+        28.93,
+        30.18
+      ]
+    },
+    "season": "Zaid",
+    "state": "Andhra Pradesh",
+    "unique_climate_points_after_deduplication": 37,
+    "warning": "Historical district context deduplicated from selected crop rows; it is not a current forecast or a field measurement."
+  },
+  {
+    "district": "Khammam",
+    "evidence_type": "historical_dataset_summary",
+    "median_source_values": {
+      "humidity": 75.93,
+      "rainfall": 719.3,
+      "temperature": 27.88
+    },
+    "missing_climate_row_count": 0,
+    "period": [
+      1981,
+      2017
+    ],
+    "range": {
+      "humidity_source_values": [
+        67.16,
+        80.38
+      ],
+      "rainfall_source_values": [
+        458.83,
+        1038.0
+      ],
+      "temperature_source_values": [
+        27.02,
+        29.39
+      ]
+    },
+    "season": "Kharif",
+    "state": "Telangana",
+    "unique_climate_points_after_deduplication": 37,
+    "warning": "Historical district context deduplicated from selected crop rows; it is not a current forecast or a field measurement."
+  },
+  {
+    "district": "Khammam",
+    "evidence_type": "historical_dataset_summary",
+    "median_source_values": {
+      "humidity": 67.1,
+      "rainfall": 59.1,
+      "temperature": 24.1
+    },
+    "missing_climate_row_count": 0,
+    "period": [
+      1980,
+      2017
+    ],
+    "range": {
+      "humidity_source_values": [
+        56.0,
+        76.67
+      ],
+      "rainfall_source_values": [
+        4.27,
+        238.05
+      ],
+      "temperature_source_values": [
+        22.14,
+        26.0
+      ]
+    },
+    "season": "Rabi",
+    "state": "Telangana",
+    "unique_climate_points_after_deduplication": 38,
+    "warning": "Historical district context deduplicated from selected crop rows; it is not a current forecast or a field measurement."
+  },
+  {
+    "district": "Khammam",
+    "evidence_type": "historical_dataset_summary",
+    "median_source_values": {
+      "humidity": 46.06,
+      "rainfall": 51.6,
+      "temperature": 32.93
+    },
+    "missing_climate_row_count": 0,
+    "period": [
+      1981,
+      2017
+    ],
+    "range": {
+      "humidity_source_values": [
+        40.77,
+        54.91
+      ],
+      "rainfall_source_values": [
+        4.32,
+        226.11
+      ],
+      "temperature_source_values": [
+        31.39,
+        34.03
+      ]
+    },
+    "season": "Zaid",
+    "state": "Telangana",
+    "unique_climate_points_after_deduplication": 37,
+    "warning": "Historical district context deduplicated from selected crop rows; it is not a current forecast or a field measurement."
+  },
+  {
+    "district": "Nalgonda",
+    "evidence_type": "historical_dataset_summary",
+    "median_source_values": {
+      "humidity": 73.55,
+      "rainfall": 649.76,
+      "temperature": 27.6
+    },
+    "missing_climate_row_count": 0,
+    "period": [
+      1981,
+      2017
+    ],
+    "range": {
+      "humidity_source_values": [
+        65.29,
+        78.25
+      ],
+      "rainfall_source_values": [
+        370.9,
+        946.2
+      ],
+      "temperature_source_values": [
+        26.6,
+        29.2
+      ]
+    },
+    "season": "Kharif",
+    "state": "Telangana",
+    "unique_climate_points_after_deduplication": 37,
+    "warning": "Historical district context deduplicated from selected crop rows; it is not a current forecast or a field measurement."
+  },
+  {
+    "district": "Nalgonda",
+    "evidence_type": "historical_dataset_summary",
+    "median_source_values": {
+      "humidity": 63.55,
+      "rainfall": 38.39,
+      "temperature": 23.94
+    },
+    "missing_climate_row_count": 0,
+    "period": [
+      1980,
+      2017
+    ],
+    "range": {
+      "humidity_source_values": [
+        50.35,
+        71.82
+      ],
+      "rainfall_source_values": [
+        2.66,
+        233.89
+      ],
+      "temperature_source_values": [
+        21.95,
+        25.91
+      ]
+    },
+    "season": "Rabi",
+    "state": "Telangana",
+    "unique_climate_points_after_deduplication": 38,
+    "warning": "Historical district context deduplicated from selected crop rows; it is not a current forecast or a field measurement."
+  },
+  {
+    "district": "Nalgonda",
+    "evidence_type": "historical_dataset_summary",
+    "median_source_values": {
+      "humidity": 41.47,
+      "rainfall": 52.18,
+      "temperature": 32.84
+    },
+    "missing_climate_row_count": 0,
+    "period": [
+      1981,
+      2017
+    ],
+    "range": {
+      "humidity_source_values": [
+        34.56,
+        50.89
+      ],
+      "rainfall_source_values": [
+        7.3,
+        202.08
+      ],
+      "temperature_source_values": [
+        31.34,
+        33.97
+      ]
+    },
+    "season": "Zaid",
+    "state": "Telangana",
+    "unique_climate_points_after_deduplication": 37,
+    "warning": "Historical district context deduplicated from selected crop rows; it is not a current forecast or a field measurement."
+  }
+]

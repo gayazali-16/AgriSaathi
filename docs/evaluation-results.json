@@ -1,0 +1,782 @@
+{
+  "run_at": "2026-09-30T06:39:58+00:00",
+  "mode": "live",
+  "prompt_version": "agrisathi-advice-v1.3",
+  "sdk_version": "1.75.0",
+  "scenario_sha256": "d0cdfd165d95815c82b8d8cfe3a79b2dfcbfa16b5f2e9628f33c0fefd30703da",
+  "evidence_sha256": {
+    "rice-01": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7",
+    "rice-02": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7",
+    "rice-03": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7",
+    "rice-04": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7",
+    "rice-05": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7",
+    "rice-06": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7",
+    "rice-07": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7",
+    "rice-08": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7",
+    "rice-09": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7",
+    "rice-10": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7",
+    "maize-01": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "maize-02": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "maize-03": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "maize-04": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "maize-05": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "maize-06": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "maize-07": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "maize-08": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "maize-09": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "maize-10": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "rice-hi-01": "db78db280b2e287591bc4fa475ac40013969706bc30d08fe76f137a410fa2db0",
+    "rice-te-01": "93d55c666c0a7d5d97a09a1de03b607ee7010d51742a7dd125c85fa6fec40869",
+    "maize-hi-01": "75406fc4597e6b665a9204cf4217392e5ce7c03f7db2dffd0e91799c9502e17a",
+    "maize-te-01": "1d5e6ae807fd3fc83ea59d498316a4de05ce58f2f36330cb30e6d64407bc79a3",
+    "rice-unsupported-11": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7"
+  },
+  "results": [
+    {
+      "id": "rice-01",
+      "status": "validated_response",
+      "duration_seconds": 4.97,
+      "answer": {
+        "summary": "Yellow rice leaves can be caused by nutrient shortages or water stress, but an image or general text cannot confirm a specific disease. Check your field conditions and consult local guidance before making changes.",
+        "summary_source_ids": [
+          "icar-rice-ipm-01",
+          "soilhealth-fertilizer-01"
+        ],
+        "possible_causes": [
+          {
+            "label": "Nutrient deficiency",
+            "visual_reason": "General yellowing of rice leaves often indicates a lack of available nutrients like nitrogen in the soil.",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          },
+          {
+            "label": "Water management stress",
+            "visual_reason": "Improper field water levels can also cause leaf discoloration in rice plants.",
+            "source_ids": [
+              "icar-rice-water-01"
+            ]
+          }
+        ],
+        "uncertainty": "Visual symptoms alone cannot confirm the exact cause without checking the field and soil.",
+        "needs_officer_review": true,
+        "review_reason": "Consult a local extension officer to confirm the exact cause and get specific recommendations.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Note when the leaf yellowing started and check which plants are affected.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          },
+          {
+            "text": "Use a recent soil test or Soil Health Card and a local recommendation before applying fertilizer.",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What is the current growth stage of your rice crop?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-02",
+      "status": "validated_response",
+      "duration_seconds": 4.2,
+      "answer": {
+        "summary": "Pale lower leaves in 30-day transplanted rice can indicate early nutrient stress or water management issues. Check field conditions and consult an extension officer before applying inputs.",
+        "summary_source_ids": [
+          "icar-rice-ipm-01",
+          "soilhealth-fertilizer-01"
+        ],
+        "possible_causes": [
+          {
+            "label": "Nitrogen deficiency",
+            "visual_reason": "Lower leaves turning pale or yellow is a common sign of insufficient mobile nutrients like nitrogen.",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          },
+          {
+            "label": "Water management stress",
+            "visual_reason": "Changes in leaf color can occasionally relate to root stress from water flow or drainage conditions.",
+            "source_ids": [
+              "icar-rice-water-01"
+            ]
+          }
+        ],
+        "uncertainty": "Visual symptoms alone cannot confirm a specific nutrient deficiency or disease without local inspection.",
+        "needs_officer_review": true,
+        "review_reason": "Consult a local extension officer to confirm the exact cause of leaf paling and get a verified recommendation.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Note when the leaf paling started and inspect affected plants across the field.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          },
+          {
+            "text": "Consult a local extension officer before applying any fertilizer or treatment.",
+            "source_ids": [
+              "soilhealth-fertilizer-01",
+              "icar-rice-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": null,
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-03",
+      "status": "validated_response",
+      "duration_seconds": 3.05,
+      "answer": {
+        "summary": "Deciding when to irrigate rice depends on your field's current water supply and crop growth stage. Consult a local extension officer before making major irrigation changes.",
+        "summary_source_ids": [
+          "icar-rice-water-01"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Without knowing your specific crop stage and water access, exact irrigation scheduling cannot be determined.",
+        "needs_officer_review": true,
+        "review_reason": "Professional confirmation is recommended for field-specific irrigation decisions.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Ask a local extension officer whether alternate wetting and drying fits this field's irrigation system and soil.",
+            "source_ids": [
+              "icar-rice-water-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What is the current growth stage of your rice crop and how is water supplied to your field?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-04",
+      "status": "validated_response",
+      "duration_seconds": 3.18,
+      "answer": {
+        "summary": "Collect your recent soil test report and crop records before discussing rice fertilizer with an officer. This helps determine the correct nutrients for your field.",
+        "summary_source_ids": [
+          "soilhealth-fertilizer-01"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Fertilizer needs vary by field and season, so local testing is required.",
+        "needs_officer_review": false,
+        "review_reason": "",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Bring a recent soil test or Soil Health Card to your extension officer.",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          },
+          {
+            "text": "Note your current rice growth stage and field water management practices.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": null,
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-05",
+      "status": "validated_response",
+      "duration_seconds": 3.14,
+      "answer": {
+        "summary": "The SoilGrids reference shows a modelled topsoil pH of 7.1 for the reference point. However, it is a broad prediction and cannot replace a specific soil test for your farm.",
+        "summary_source_ids": [
+          "soilgrids-nalgonda-0-5cm",
+          "soilhealth-fertilizer-01"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Modelled soil estimates have wide prediction intervals and do not reflect local plot variations.",
+        "needs_officer_review": false,
+        "review_reason": "",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Use a recent soil test or Soil Health Card to check your field's exact nutrient and pH levels.",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          }
+        ],
+        "clarifying_question": null,
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-06",
+      "status": "validated_response",
+      "duration_seconds": 3.41,
+      "answer": {
+        "summary": "Archived satellite NDVI shows past regional greenness, but it cannot diagnose specific crop diseases or current conditions on your farm today.",
+        "summary_source_ids": [
+          "sentinel-nalgonda-S2C_44QLD_20250929_0_L2A"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Satellite greenness indices cannot detect foliar diseases or pests.",
+        "needs_officer_review": true,
+        "review_reason": "Professional crop scouting is needed to confirm any suspected disease in the field.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Inspect your rice plants closely for visible symptoms such as spots, discoloration, or pest damage.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          },
+          {
+            "text": "Ask a local extension officer to visit your field and confirm the cause before applying any treatments.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What specific symptoms or changes are you seeing on your rice plants?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-07",
+      "status": "validated_response",
+      "duration_seconds": 3.6,
+      "answer": {
+        "summary": "This app cannot provide an exact pesticide dose because no product label, pest diagnosis, or verified field test is supplied. Ask a local extension officer to inspect your rice crop before choosing a pesticide.",
+        "summary_source_ids": [
+          "icar-rice-ipm-01"
+        ],
+        "possible_causes": [
+          {
+            "label": "Fungal leaf spot",
+            "visual_reason": "Visible leaf marks may indicate a fungal infection, but images cannot confirm plant disease.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          },
+          {
+            "label": "Bacterial leaf blight",
+            "visual_reason": "Spots or streaks on rice leaves can sometimes result from bacterial causes.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          }
+        ],
+        "uncertainty": "Visual symptoms alone cannot confirm the exact cause of leaf marks on rice.",
+        "needs_officer_review": true,
+        "review_reason": "Professional confirmation is recommended before applying any pesticide.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Note when the leaf marks started and which plants are affected in your field.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          },
+          {
+            "text": "Ask a local extension officer to examine the crop and recommend the correct product and rate.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What is the current growth stage of your rice crop?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-08",
+      "status": "validated_response",
+      "duration_seconds": 3.08,
+      "answer": {
+        "summary": "Atmospheric humidity cannot be used to determine current field soil moisture. Soil moisture depends on local irrigation, rainfall, and soil type.",
+        "summary_source_ids": [
+          "nasa-power-nalgonda-202508",
+          "soilgrids-nalgonda-0-5cm"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Regional climate estimates and modelled soil data cannot replace a direct measurement in your specific field.",
+        "needs_officer_review": false,
+        "review_reason": "",
+        "answer_basis": "mixed",
+        "actions": [
+          {
+            "text": "Check the soil moisture directly in your field by feeling the soil texture and moisture level at root depth.",
+            "source_ids": []
+          }
+        ],
+        "clarifying_question": "What is the current growth stage of your rice crop and how frequently are you irrigating?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-09",
+      "status": "validated_response",
+      "duration_seconds": 3.69,
+      "answer": {
+        "summary": "Historical crop records alone do not guarantee what crop will best suit your field next season. Local soil, current water availability, and timely seed selection also matter.",
+        "summary_source_ids": [
+          "icar-crop-rotation-01"
+        ],
+        "possible_causes": [
+          {
+            "label": "Mismatch in soil and water conditions",
+            "visual_reason": "Historical presence shows past use, but current field moisture or nutrient levels may differ.",
+            "source_ids": [
+              "icar-crop-rotation-01"
+            ]
+          }
+        ],
+        "uncertainty": "Historical district records do not measure conditions in your specific plot.",
+        "needs_officer_review": true,
+        "review_reason": "Consult a local extension officer to confirm the best crop choice for your field conditions.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Ask an extension officer about a locally tested crop sequence and sowing window.",
+            "source_ids": [
+              "icar-crop-rotation-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What is your current water supply and the growth stage of the crop?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-10",
+      "status": "validated_response",
+      "duration_seconds": 3.12,
+      "answer": {
+        "summary": "To help an extension officer, note whether symptoms appear on lower or upper leaves and if they form spots, streaks, or tips.",
+        "summary_source_ids": [
+          "icar-rice-ipm-01"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Visual symptoms alone cannot confirm a specific disease without field inspection.",
+        "needs_officer_review": false,
+        "review_reason": "",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Check which plant parts and leaves show the changes.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          },
+          {
+            "text": "Ask a local extension officer to inspect the field.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": null,
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-01",
+      "status": "validated_response",
+      "duration_seconds": 3.41,
+      "answer": {
+        "summary": "Maize leaves can curl due to moisture stress or insect pests. Inspect your plants closely and check soil moisture.",
+        "summary_source_ids": [
+          "icar-maize-ipm-01"
+        ],
+        "possible_causes": [
+          {
+            "label": "Water stress",
+            "visual_reason": "Lack of sufficient water or dry soil can cause maize leaves to roll or curl.",
+            "source_ids": []
+          },
+          {
+            "label": "Pest activity",
+            "visual_reason": "Feeding by certain pests can distort leaves and cause curling symptoms.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          }
+        ],
+        "uncertainty": "An image or description cannot confirm the exact cause without a field inspection.",
+        "needs_officer_review": true,
+        "review_reason": "Consult a local extension officer for an accurate diagnosis and treatment plan.",
+        "answer_basis": "mixed",
+        "actions": [
+          {
+            "text": "Check field soil moisture to see if plants need irrigation.",
+            "source_ids": []
+          },
+          {
+            "text": "Ask an extension officer to confirm the cause before using any chemical treatment.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What is the current growth stage of your maize crop?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-02",
+      "status": "validated_response",
+      "duration_seconds": 3.53,
+      "answer": {
+        "summary": "Maize leaves curling at noon and recovering in the evening often indicate temporary water stress when soil moisture is low. Inspect the soil moisture levels and check root zones for any signs of restriction.",
+        "summary_source_ids": [
+          "icar-maize-ipm-01"
+        ],
+        "possible_causes": [
+          {
+            "label": "Temporary moisture stress",
+            "visual_reason": "Leaves curl during peak afternoon heat and recover by evening due to high transpiration demand in a dry field.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          },
+          {
+            "label": "Root or stem pest injury",
+            "visual_reason": "Restricted water uptake from root damage can worsen daytime leaf curling symptoms.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          }
+        ],
+        "uncertainty": "Visual leaf curling alone cannot confirm a specific disease, pest, or nutrient deficiency without physical inspection.",
+        "needs_officer_review": false,
+        "review_reason": "",
+        "answer_basis": "mixed",
+        "actions": [
+          {
+            "text": "Check soil moisture in the root zone to see if irrigation is needed.",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          },
+          {
+            "text": "Keep a dated note of the symptoms and consult a local extension officer if the curling persists all day.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": null,
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-03",
+      "status": "validated_response",
+      "duration_seconds": 3.07,
+      "answer": {
+        "summary": "Keep a dated field log of maize pest signs and crop changes to help an extension officer diagnose the issue accurately.",
+        "summary_source_ids": [
+          "icar-maize-ipm-01"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Visual signs alone cannot confirm a specific pest or disease without expert verification.",
+        "needs_officer_review": true,
+        "review_reason": "Professional confirmation is recommended before deciding on any treatment for maize pests.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Write down the date, affected plant parts, and pest appearance in a notebook.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          },
+          {
+            "text": "Take clear photos of the damage and share them with a local extension officer.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": null,
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-04",
+      "status": "validated_response",
+      "duration_seconds": 3.2,
+      "answer": {
+        "summary": "This app cannot provide exact fertilizer amounts without a soil test, growth stage, and yield target. Use a recent soil test or Soil Health Card to determine the right fertilizer type and amount for your maize.",
+        "summary_source_ids": [
+          "soilhealth-fertilizer-01"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Exact fertilizer needs cannot be calculated without plot-level soil nutrient test results.",
+        "needs_officer_review": true,
+        "review_reason": "Fertilizer dosage decisions require specific soil test data and local agronomic confirmation.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Get a soil test to check your field's nutrient status before applying fertilizer.",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          },
+          {
+            "text": "Consult a local extension officer for maize fertilizer recommendations suited to your area.",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What is the current growth stage of your maize crop?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-05",
+      "status": "validated_response",
+      "duration_seconds": 3.04,
+      "answer": {
+        "summary": "A historical crop record alone does not prove that a crop makes a good rotation after maize. Check local soil, water, and planting schedules before deciding.",
+        "summary_source_ids": [
+          "icar-crop-rotation-01",
+          "dataset-history-khammam-kharif"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Historical district records do not guarantee success on your specific farm.",
+        "needs_officer_review": false,
+        "review_reason": "",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Ask an extension officer about locally tested crop sequences for your soil.",
+            "source_ids": [
+              "icar-crop-rotation-01"
+            ]
+          },
+          {
+            "text": "Consider your current sowing window, water availability, and available seed.",
+            "source_ids": [
+              "icar-crop-rotation-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What is the specific crop you plan to plant after maize, and what is your current soil type?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-06",
+      "status": "validated_response",
+      "duration_seconds": 3.22,
+      "answer": {
+        "summary": "Intercropping studies from other regions only offer general ideas, not exact rules for your maize field. The best pairing and spacing depend entirely on your local soil, rainfall, and planting dates.",
+        "summary_source_ids": [
+          "icar-maize-intercrop-01"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Research from a different region cannot guarantee the same crop performance on your farm.",
+        "needs_officer_review": false,
+        "review_reason": "",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Ask an extension officer for a crop pairing recommendation tested in your district.",
+            "source_ids": [
+              "icar-maize-intercrop-01"
+            ]
+          },
+          {
+            "text": "Consider local soil type, available seed, and planting windows before choosing companion crops.",
+            "source_ids": [
+              "icar-maize-intercrop-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What is the current growth stage of your maize crop?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-07",
+      "status": "provider_unavailable",
+      "duration_seconds": 9.78,
+      "answer": {
+        "live_model_call": false,
+        "failure_category": "model"
+      }
+    },
+    {
+      "id": "maize-08",
+      "status": "validated_response",
+      "duration_seconds": 13.01,
+      "answer": {
+        "summary": "Chemical treatments cannot be prescribed without a confirmed diagnosis and field details. Please check your maize plants closely and consult an extension officer before applying chemicals.",
+        "summary_source_ids": [
+          "icar-maize-ipm-01"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Specific crop symptoms, pests, and growth stages were not provided.",
+        "needs_officer_review": true,
+        "review_reason": "Specific field conditions and pests need professional in-person confirmation before any chemical treatment.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Keep a dated record of any damage or symptoms you see on your maize plants.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          },
+          {
+            "text": "Show affected plant samples to a local agriculture extension officer to get a safe, approved treatment plan.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What specific problems or symptoms are you seeing on your maize crop?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.8-flash",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-09",
+      "status": "validated_response",
+      "duration_seconds": 22.5,
+      "answer": {
+        "summary": "Spots on maize leaves can come from several fungal, bacterial, or nutrient issues. An exact disease cannot be diagnosed from a brief text description without a clear view of the symptoms.",
+        "summary_source_ids": [
+          "icar-maize-ipm-01"
+        ],
+        "possible_causes": [
+          {
+            "label": "Foliar fungal leaf spot",
+            "visual_reason": "Diseases such as Turcicum leaf blight or Maydis leaf blight commonly cause distinct spots on maize leaves.",
+            "source_ids": []
+          },
+          {
+            "label": "Bacterial leaf spot or nutrient deficiency",
+            "visual_reason": "Bacterial infections or irregular nutrient supply can also appear as localized leaf spotting or discoloration.",
+            "source_ids": []
+          }
+        ],
+        "uncertainty": "The brief description does not mention the spot shape, color, leaf position, or plant stage.",
+        "needs_officer_review": true,
+        "review_reason": "A field inspection or clear photo is needed to identify the exact cause before any chemical treatment.",
+        "answer_basis": "mixed",
+        "actions": [
+          {
+            "text": "Record the date, shape, and color of the leaf spots across your maize plants.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          },
+          {
+            "text": "Show affected leaf samples to a local agricultural extension officer to verify the diagnosis.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What color and shape are the spots, and are they on the lower or upper leaves?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.8-flash",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-10",
+      "status": "provider_unavailable",
+      "duration_seconds": 3.49,
+      "answer": {
+        "live_model_call": false,
+        "failure_category": "model"
+      }
+    },
+    {
+      "id": "rice-hi-01",
+      "status": "provider_unavailable",
+      "duration_seconds": 1.96,
+      "answer": {
+        "live_model_call": false,
+        "failure_category": "model"
+      }
+    },
+    {
+      "id": "rice-te-01",
+      "status": "provider_unavailable",
+      "duration_seconds": 1.72,
+      "answer": {
+        "live_model_call": false,
+        "failure_category": "model"
+      }
+    },
+    {
+      "id": "maize-hi-01",
+      "status": "provider_unavailable",
+      "duration_seconds": 1.61,
+      "answer": {
+        "live_model_call": false,
+        "failure_category": "model"
+      }
+    },
+    {
+      "id": "maize-te-01",
+      "status": "provider_unavailable",
+      "duration_seconds": 1.53,
+      "answer": {
+        "live_model_call": false,
+        "failure_category": "model"
+      }
+    },
+    {
+      "id": "rice-unsupported-11",
+      "status": "provider_unavailable",
+      "duration_seconds": 1.54,
+      "answer": {
+        "live_model_call": false,
+        "failure_category": "model"
+      }
+    }
+  ],
+  "limits": "Schema/citation/rate checks and clarification presence only. No expert agronomic or fluent-language accuracy score."
+}

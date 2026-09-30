@@ -1,0 +1,284 @@
+{
+  "run_at": "2026-09-30T06:47:05+00:00",
+  "mode": "live",
+  "prompt_version": "agrisathi-advice-v1.3",
+  "retry_from": "docs\\evaluation-results.json",
+  "configured_models": [
+    "gemini-3.5-flash-lite",
+    "gemini-3.8-flash",
+    "gemini-3.1-flash-lite"
+  ],
+  "sdk_version": "1.75.0",
+  "scenario_sha256": "d0cdfd165d95815c82b8d8cfe3a79b2dfcbfa16b5f2e9628f33c0fefd30703da",
+  "evidence_sha256": {
+    "maize-07": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "maize-10": "bc0280eeaa0b68b2d48b79fc40daff094e04b35198f7aea219befe0b8afc13db",
+    "rice-hi-01": "db78db280b2e287591bc4fa475ac40013969706bc30d08fe76f137a410fa2db0",
+    "rice-te-01": "93d55c666c0a7d5d97a09a1de03b607ee7010d51742a7dd125c85fa6fec40869",
+    "maize-hi-01": "75406fc4597e6b665a9204cf4217392e5ce7c03f7db2dffd0e91799c9502e17a",
+    "maize-te-01": "1d5e6ae807fd3fc83ea59d498316a4de05ce58f2f36330cb30e6d64407bc79a3",
+    "rice-unsupported-11": "c3f2b8949b9b8d3ccd2e8c93dfd6e3c1ffc9f2ba616c110a1e0661a535ac87f7"
+  },
+  "results": [
+    {
+      "id": "maize-07",
+      "status": "validated_response",
+      "duration_seconds": 4.64,
+      "answer": {
+        "summary": "Historical district records and climate estimates cannot predict rain for your maize plot tomorrow. Weather patterns change daily and require local forecasts rather than past averages.",
+        "summary_source_ids": [
+          "nasa-power-khammam-202508"
+        ],
+        "possible_causes": [],
+        "uncertainty": "Past averages and gridded reference estimates cannot show tomorrow's weather at your specific farm.",
+        "needs_officer_review": false,
+        "review_reason": "",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "Check a current daily weather forecast for your specific village before planning farm work.",
+            "source_ids": []
+          },
+          {
+            "text": "Keep a local rain gauge or observe current sky conditions to track rainfall on your farm.",
+            "source_ids": []
+          }
+        ],
+        "clarifying_question": null,
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-10",
+      "status": "validated_response",
+      "duration_seconds": 4.0,
+      "answer": {
+        "summary": "To discuss maize water stress with an extension officer, bring details about your current crop growth stage, recent irrigation history, and how long symptoms have appeared in the field.",
+        "summary_source_ids": [],
+        "possible_causes": [],
+        "uncertainty": "Exact crop conditions can vary by field location and management.",
+        "needs_officer_review": true,
+        "review_reason": "Professional confirmation is recommended for managing crop stress and irrigation decisions.",
+        "answer_basis": "general",
+        "actions": [
+          {
+            "text": "Note down the current growth stage of your maize and how long the leaves have shown stress.",
+            "source_ids": []
+          },
+          {
+            "text": "Consult a local extension officer with your field details to discuss watering needs.",
+            "source_ids": []
+          }
+        ],
+        "clarifying_question": "What is the current growth stage of your maize and how many days has it been since the last irrigation or rainfall?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-hi-01",
+      "status": "validated_response",
+      "duration_seconds": 3.89,
+      "answer": {
+        "summary": "धान के पत्ते पीले होने के कई कारण हो सकते हैं, जैसे पोषक तत्वों की कमी या पानी की अधिकता। सटीक कारण जानने के लिए खेत की स्थिति और लक्षणों को ध्यान से देखें।",
+        "summary_source_ids": [
+          "icar-rice-ipm-01",
+          "soilhealth-fertilizer-01"
+        ],
+        "possible_causes": [
+          {
+            "label": "पोषक तत्वों की कमी",
+            "visual_reason": "नाइट्रोजन या अन्य पोषक तत्वों की कमी से धान के पत्ते पीले पड़ सकते हैं।",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          },
+          {
+            "label": "जल प्रबंधन में समस्या",
+            "visual_reason": "खेत में लंबे समय तक पानी भरा रहने या पानी की कमी से भी पत्ते पीले हो सकते हैं।",
+            "source_ids": [
+              "icar-rice-water-01"
+            ]
+          }
+        ],
+        "uncertainty": "तस्वीर या सामान्य लक्षणों से रोग या खाद की सही कमी की पुष्टि नहीं की जा सकती।",
+        "needs_officer_review": true,
+        "review_reason": "पीले पत्तों के सटीक कारण की पुष्टि और सही उपचार तय करने के लिए स्थानीय कृषि अधिकारी से मिलें।",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "लिखें कि पत्ते कब पीले हुए और कितने पौधे प्रभावित हैं।",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          },
+          {
+            "text": "खाद या कीटनाशक बदलने से पहले स्थानीय कृषि अधिकारी से सलाह लें।",
+            "source_ids": [
+              "soilhealth-fertilizer-01",
+              "icar-rice-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": "धान की फसल अभी किस अवस्था में है?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-te-01",
+      "status": "validated_response",
+      "duration_seconds": 3.9,
+      "answer": {
+        "summary": "మీ వరి ఆకులు పసుపు రంగులో ఉంటే, అది పోషకాల లోపం లేదా నీటి సమస్య అయి ఉండవచ్చు. ఫోటో ఆధారంగా వ్యాధిని ఖచ్చితంగా నిర్ధారించలేము.",
+        "summary_source_ids": [
+          "icar-rice-ipm-01",
+          "soilhealth-fertilizer-01"
+        ],
+        "possible_causes": [
+          {
+            "label": "పోషకాల లోపం",
+            "visual_reason": "ఆకులు పసుపు రంగులోకి మారడం పోషకాల లేమిని సూచించవచ్చు.",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          },
+          {
+            "label": "నీటి నిర్వహణ సమస్య",
+            "visual_reason": "పొలంలో నీరు ఎక్కువ కావడం లేదా తక్కువ కావడం వల్ల ఆకులు పసుపు తిరగవచ్చు.",
+            "source_ids": [
+              "icar-rice-water-01"
+            ]
+          }
+        ],
+        "uncertainty": "ఈ సమాచారం సాధారణ అవగాహన కోసం మాత్రమే; మీ పొలంలో ఖచ్చితమైన కారణాన్ని మట్టి పరీక్ష ద్వారా తెలుసుకోవాలి.",
+        "needs_officer_review": true,
+        "review_reason": "ఆకుల రంగు మారడానికి గల అసలు కారణాన్ని మరియు సరైన ఎరువుల మోతాదును తెలుసుకోవడానికి స్థానిక వ్యవసాయ అధికారిని సంప్రదించండి.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "మరింత కచ్చితమైన సలహా కోసం స్థానిక వ్యవసాయ అధికారిని సంప్రదించి పొలాన్ని చూపించండి.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          },
+          {
+            "text": "ఖచ్చితమైన పోషకాల స్థితిని తెలుసుకోవడానికి మట్టి పరీక్ష చేయించండి.",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          }
+        ],
+        "clarifying_question": "ఈ లక్షణాలు ఎప్పుడు ప్రారంభమయ్యాయి మరియు మీ వరి పంట ఏ దశలో ఉంది?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-hi-01",
+      "status": "validated_response",
+      "duration_seconds": 4.09,
+      "answer": {
+        "summary": "मक्का की फसल में पानी की स्थिति और सिंचाई की जरूरत समझने के लिए खेत की मिट्टी की नमी और फसल की वृद्धि की अवस्था नोट करें।",
+        "summary_source_ids": [
+          "soilhealth-fertilizer-01"
+        ],
+        "possible_causes": [],
+        "uncertainty": "छवि या खेत की सीधी माप के बिना सटीक पानी की कमी का अनुमान नहीं लगाया जा सकता।",
+        "needs_officer_review": true,
+        "review_reason": "सिंचाई या पानी के प्रबंधन पर सटीक निर्णय के लिए स्थानीय कृषि अधिकारी से मिलकर खेत की स्थिति की जाँच करवाएँ।",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "फसल की बुवाई की तारीख और उसकी मौजूदा अवस्था की डायरी बनाएँ।",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          },
+          {
+            "text": "मिट्टी की नमी और हाल की बारिश या सिंचाई का रिकॉर्ड साथ रखें।",
+            "source_ids": [
+              "soilhealth-fertilizer-01"
+            ]
+          }
+        ],
+        "clarifying_question": "आपकी मक्का की फसल अभी किस वृद्धि की अवस्था में है?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "maize-te-01",
+      "status": "validated_response",
+      "duration_seconds": 20.89,
+      "answer": {
+        "summary": "మొక్కజొన్న పొలంలో నీటి సమస్యపై వ్యవసాయ అధికారిని సంప్రదించే ముందు పొలం వయస్సు, నీటి లభ్యత వంటి వివరాలను సేకరించండి.",
+        "summary_source_ids": [
+          "icar-maize-ipm-01"
+        ],
+        "possible_causes": [],
+        "uncertainty": "ఈ సమాచారం సాధారణ అవగాహన కోసం మాత్రమే.",
+        "needs_officer_review": true,
+        "review_reason": "పొలం పరిస్థితిని బట్టి సరైన నీటి యాజమాన్యం కోసం అధికారిక సలహా అవసరం.",
+        "answer_basis": "research",
+        "actions": [
+          {
+            "text": "పంటలో నీటి సమస్య ఎప్పటి నుండి ఉందో గమనించండి.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          },
+          {
+            "text": "స్థానిక వ్యవసాయ అధికారిని సంప్రదించి సరైన సలహా తీసుకోండి.",
+            "source_ids": [
+              "icar-maize-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": null,
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    },
+    {
+      "id": "rice-unsupported-11",
+      "status": "validated_response",
+      "duration_seconds": 3.33,
+      "answer": {
+        "summary": "This extension support tool cannot provide personal data or exact plot coordinates from the evidence. Please share your crop growth stage and observe field symptoms carefully.",
+        "summary_source_ids": [],
+        "possible_causes": [],
+        "uncertainty": "Personal contact details and specific plot locations are not contained in the provided reference materials.",
+        "needs_officer_review": false,
+        "review_reason": "",
+        "answer_basis": "mixed",
+        "actions": [
+          {
+            "text": "Note when any crop symptoms started and which plants look affected.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          },
+          {
+            "text": "Consult a local extension officer for plot-specific questions and professional guidance.",
+            "source_ids": [
+              "icar-rice-ipm-01"
+            ]
+          }
+        ],
+        "clarifying_question": "What is the current growth stage of your rice crop?",
+        "provider": "Google Gemini API",
+        "model": "gemini-3.5-flash-lite",
+        "live_model_call": true
+      }
+    }
+  ],
+  "limits": "Schema/citation/rate checks and clarification presence only. No expert agronomic or fluent-language accuracy score."
+}

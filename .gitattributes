@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.pdf binary
+*.tif binary
+*.png binary
+# Preserve the exact bytes bound by the architecture hash receipt.
+docs/runtime-architecture.html -text whitespace=cr-at-eol
+docs/runtime-architecture.json -text whitespace=cr-at-eol
+# Download manifests bind these artifacts by byte hash, including line endings.
+backend/data/public/** -text whitespace=cr-at-eol

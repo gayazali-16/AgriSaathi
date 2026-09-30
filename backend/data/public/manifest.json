@@ -1,0 +1,74 @@
+{
+  "version": "public-reference-v1",
+  "locations": {
+    "Nalgonda": {
+      "state": "Telangana",
+      "lat": 17.0,
+      "lon": 79.3
+    },
+    "Khammam": {
+      "state": "Telangana",
+      "lat": 17.25,
+      "lon": 80.12
+    },
+    "Krishna": {
+      "state": "Andhra Pradesh",
+      "lat": 16.3,
+      "lon": 81.05
+    }
+  },
+  "downloads": {
+    "Nalgonda/soil": {
+      "status": "available",
+      "sha256": "4afb0f9639def9be12f928288b321d7e8da8c52f198a34c25e5f0c8cc9316b5b",
+      "request_url": "https://rest.isric.org/soilgrids/v2.0/properties/query?lon=79.3&lat=17.0&property=phh2o&property=soc&depth=0-5cm&value=mean&value=Q0.05&value=Q0.95",
+      "downloaded_at": "2026-09-27T12:39:54.672564+00:00"
+    },
+    "Nalgonda/climate": {
+      "status": "available",
+      "sha256": "3f463078dfc7a3308d3ed35e3938715328f73307316f3d06fa850111a6c50780",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?longitude=79.3&latitude=17.0&parameters=T2M%2CRH2M%2CPRECTOTCORR&community=AG&start=20250801&end=20250831&format=JSON",
+      "downloaded_at": "2026-09-27T12:39:55.686215+00:00"
+    },
+    "Khammam/soil": {
+      "status": "failed",
+      "error": "ValueError: SoilGrids returned only missing values"
+    },
+    "Khammam/climate": {
+      "status": "available",
+      "sha256": "993cc4ccf3053f03894b4962190d41b6c0515b9b9b0af464746477d3abb723fd",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?longitude=80.12&latitude=17.25&parameters=T2M%2CRH2M%2CPRECTOTCORR&community=AG&start=20250801&end=20250831&format=JSON",
+      "downloaded_at": "2026-09-27T12:40:07.283715+00:00"
+    },
+    "Krishna/soil": {
+      "status": "available",
+      "sha256": "b3e1b059f7b917a573e6e0a0d60ae8c47c1c6d10f55566d73de21a08070a5e1c",
+      "request_url": "https://rest.isric.org/soilgrids/v2.0/properties/query?lon=81.05&lat=16.3&property=phh2o&property=soc&depth=0-5cm&value=mean&value=Q0.05&value=Q0.95",
+      "downloaded_at": "2026-09-27T12:40:16.597775+00:00"
+    },
+    "Krishna/climate": {
+      "status": "available",
+      "sha256": "3cec86396317ee33dd0cbb938f1d7d439d09c121e920912abe4ebfa8abf24245",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?longitude=81.05&latitude=16.3&parameters=T2M%2CRH2M%2CPRECTOTCORR&community=AG&start=20250801&end=20250831&format=JSON",
+      "downloaded_at": "2026-09-27T12:40:17.458643+00:00"
+    },
+    "Nalgonda/satellite": {
+      "status": "available",
+      "sha256": "97cc4f3c289bdb3696b37b1f7ebcfa1bba467af421fd3a0abe8c8a88e0176580",
+      "request_url": "https://earth-search.aws.element84.com/v1/search?collections=sentinel-2-l2a&bbox=79.295%2C16.995%2C79.30499999999999%2C17.005&datetime=2025-08-01T00%3A00%3A00Z%2F2025-10-31T23%3A59%3A59Z&limit=30",
+      "downloaded_at": "2026-09-27T12:50:28.927521+00:00"
+    },
+    "Khammam/satellite": {
+      "status": "available",
+      "sha256": "6f63979d2d0bca08d53fac14350a53e0616168821fef4364956384246a618f71",
+      "request_url": "https://earth-search.aws.element84.com/v1/search?collections=sentinel-2-l2a&bbox=80.11500000000001%2C17.245%2C80.125%2C17.255&datetime=2025-08-01T00%3A00%3A00Z%2F2025-10-31T23%3A59%3A59Z&limit=30",
+      "downloaded_at": "2026-09-27T12:50:36.686597+00:00"
+    },
+    "Krishna/satellite": {
+      "status": "available",
+      "sha256": "719915e7602c9ad02a86a9519c58dd571314c07fa0b89db49aefdb4bd344a771",
+      "request_url": "https://earth-search.aws.element84.com/v1/search?collections=sentinel-2-l2a&bbox=81.045%2C16.295%2C81.05499999999999%2C16.305&datetime=2025-08-01T00%3A00%3A00Z%2F2025-10-31T23%3A59%3A59Z&limit=30",
+      "downloaded_at": "2026-09-27T12:50:41.691581+00:00"
+    }
+  }
+}

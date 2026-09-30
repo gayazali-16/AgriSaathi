@@ -1,0 +1,59 @@
+{
+  "artifact_version": "1.0.0",
+  "counts": {
+    "malformed_year_in_selected_district_rows": 0,
+    "selected_district_rice_maize_rows": 672,
+    "selected_district_rows_all_crops": 10416,
+    "source_data_rows": 1194806
+  },
+  "excluded_source_fields": [
+    "soil type used as farm-specific diagnosis",
+    "nitrogen/phosphate/potash consumption or shares",
+    "total consumption",
+    "area",
+    "production",
+    "average yield",
+    "chemical/organic fertilizer prescriptions",
+    "intercropping and crop rotation strings as confirmed field practice"
+  ],
+  "field_units": {
+    "Humidity": "unit_not_explicitly_documented",
+    "Rainfall": "unit_not_explicitly_documented",
+    "Temperature": "unit_not_explicitly_documented"
+  },
+  "filters": {
+    "core_crops": [
+      "Maize",
+      "Rice"
+    ],
+    "district_rows_retain_all_crops_for_coverage_count_only": true,
+    "regions": [
+      {
+        "district": "Krishna",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "district": "Khammam",
+        "state": "Telangana"
+      },
+      {
+        "district": "Nalgonda",
+        "state": "Telangana"
+      }
+    ]
+  },
+  "generated_at_utc": "2026-09-23T13:56:21+00:00",
+  "limitations": [
+    "Original data spans historical years and labels; administrative boundaries are not verified against current districts.",
+    "Rows are dataset records, not farm counts or guaranteed independent climate observations.",
+    "Repeated joins/broadcast values are suspected; historical climate rows are deduplicated by year, season, and value tuple.",
+    "A crop's presence in the source does not prove present-day local suitability.",
+    "Source-level missingness and row lineage are incomplete; invalid numeric values are omitted, not imputed."
+  ],
+  "source": {
+    "citation": "See docs/sources/crop-dataset-README.md and docs/sources/crop-dataset-references.pdf.",
+    "filename": "crops_dataset.csv",
+    "license": "MIT; original notice is retained in DATASET-LICENSE.",
+    "sha256": "83a931b5c008109a50da26b88bdf94d75013507fb45b5e8bae4eb6eec915c8c3"
+  }
+}

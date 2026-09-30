@@ -1,0 +1,3 @@
+# Offline preparation only; not required by the deployed API.
+rasterio>=1.4,<2
+numpy>=2,<3
