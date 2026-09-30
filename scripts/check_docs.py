@@ -15,7 +15,7 @@ from backend.config import ROOT
 
 def local_checks() -> tuple[list[str], set[str]]:
     files = [ROOT / 'README.md', ROOT / 'MANUAL_TESTING_GUIDE.md',
-             ROOT / 'DEPLOYMENT_GUIDE.md', ROOT / 'THIRD_PARTY_NOTICES.md',
+             ROOT / 'THIRD_PARTY_NOTICES.md',
              *sorted((ROOT / 'docs').glob('*.md'))]
     errors, urls = [], set()
     for path in files:

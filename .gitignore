@@ -25,3 +25,7 @@ backend/data/uploads/
 *.mp4
 *.webm
 .DS_Store
+
+# Personal deployment instructions (local only)
+/DEPLOYMENT_GUIDE.md
+/docs/deployment.md

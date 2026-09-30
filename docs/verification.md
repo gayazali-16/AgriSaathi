@@ -33,5 +33,4 @@ artifacts; ordinary source text uses LF. The standalone export checked this boun
 
 Docker Desktop's engine was unavailable in this session, so the new submission
 image was not built or started here. Cloud credentials were not used, and no
-Cloud Run deployment or hosted end-to-end success is asserted. Follow
-[DEPLOYMENT_GUIDE.md](../DEPLOYMENT_GUIDE.md) and verify the actual hosted journey.
+Cloud Run deployment or hosted end-to-end success is asserted.

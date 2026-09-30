@@ -31,7 +31,6 @@ def test_submission_setup_and_dataset_citations_are_standalone():
     assert 'npm ci' in readme
     assert 'empty case/advisory history' in readme
     assert 'Code-for-Communities.git' not in readme
-    assert (ROOT / 'DEPLOYMENT_GUIDE.md').is_file()
     assert (ROOT / '.gcloudignore').is_file()
     assert (ROOT / 'docs/sources/crop-dataset-README.md').is_file()
     assert (ROOT / 'docs/sources/crop-dataset-references.pdf').is_file()

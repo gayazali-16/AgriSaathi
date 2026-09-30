@@ -10,7 +10,6 @@ Telangana advisories are automatically shared with matching Krishna crop profile
 inside the same backend.
 
 **Judges:** follow the setup below, then [the short judge journey](docs/demo-script.md).
-For a public URL, follow [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md).
 
 ## What is built, and what is limited
 
@@ -288,7 +287,6 @@ scripts/          Data preparation/validation, evaluation and demo maintenance
 docs/             Judge journey, provenance, evaluation, diagram and deployment
 .env.example      Empty configuration template; copy privately to .env
 Dockerfile        Builds the frontend and serves SPA + API from one container
-DEPLOYMENT_GUIDE.md  Plain-language Cloud Run demonstration deployment
 ```
 
 Large original datasets, environments, dependency folders, caches, generated
