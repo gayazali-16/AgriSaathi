@@ -245,6 +245,15 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--green); }
 .site-footer { min-height: 58px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem clamp(1rem, 4vw, 4.5rem); border-top: 1px solid var(--line); color: var(--muted); background: rgba(255,254,249,.78); font-size: .72rem; }
 .site-footer > span { color: var(--green-deep); font-weight: 800; letter-spacing: .1em; }
 .site-footer p { margin: 0; text-align: center; }
+.site-footer { flex-wrap: wrap; }
+.sample-credentials { flex-basis: 100%; }
+.sample-credentials > button { font-size: .8rem; }
+.sample-credentials-panel { max-width: 760px; margin-top: .75rem; padding: 1rem; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
+.sample-credentials-panel p { margin-bottom: .65rem; text-align: left; }
+.sample-credentials-panel table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+.sample-credentials-panel caption { margin-bottom: .5rem; text-align: left; font-weight: 700; }
+.sample-credentials-panel th, .sample-credentials-panel td { padding: .5rem .3rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.sample-credentials-panel th:nth-child(2) { width: 15%; }
 
 /* Tables retain all field details and scroll within their own frame on phones. */
 .field-table-scroll { width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: 11px; }

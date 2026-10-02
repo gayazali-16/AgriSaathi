@@ -5,6 +5,9 @@ export const languages = [
 ];
 
 const en = {
+  sampleCredentials: 'Sample login credentials',
+  sampleCredentialsHelp: 'Public demonstration accounts only. Sign out before switching accounts.',
+  sampleAccountRole: 'Role',
   caseReview: "Case review",
   publishedAdvisories: "Published advisories",
   noPublishedAdvisories: "No advisories have been published yet.",
@@ -341,6 +344,9 @@ const en = {
 
 const hi = {
   ...en,
+  sampleCredentials: 'नमूना लॉगिन विवरण',
+  sampleCredentialsHelp: 'केवल सार्वजनिक प्रदर्शन खाते। खाता बदलने से पहले साइन आउट करें।',
+  sampleAccountRole: 'भूमिका',
   caseReview: "केस की समीक्षा",
   publishedAdvisories: "जारी सूचनाएँ",
   noPublishedAdvisories: "अभी कोई सूचना जारी नहीं हुई है।",
@@ -674,6 +680,9 @@ const hi = {
 
 const te = {
   ...en,
+  sampleCredentials: 'నమూనా లాగిన్ వివరాలు',
+  sampleCredentialsHelp: 'పబ్లిక్ ప్రదర్శన ఖాతాలు మాత్రమే. ఖాతా మార్చే ముందు సైన్ అవుట్ చేయండి.',
+  sampleAccountRole: 'పాత్ర',
   caseReview: "కేసు సమీక్ష",
   publishedAdvisories: "విడుదల చేసిన సూచనలు",
   noPublishedAdvisories: "ఇంకా సూచనలు విడుదల చేయలేదు.",

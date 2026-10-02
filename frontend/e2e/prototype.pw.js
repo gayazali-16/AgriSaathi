@@ -34,6 +34,17 @@ test('farmer question reaches officer review and the matching regional farmer fe
   await expect(page.getByRole('heading', { name: 'A clearer next step for your field.' })).toBeVisible();
   await expectNoHorizontalOverflow(page);
   await expectNoA11yViolations(page, 'welcome');
+  const credentials = page.getByRole('button', { name: 'Sample login credentials' });
+  await credentials.focus();
+  await page.keyboard.press('Enter');
+  await expect(credentials).toHaveAttribute('aria-expanded', 'true');
+  await expect(page.getByRole('table', { name: 'Sample login credentials' })).toBeVisible();
+  await expect(page.getByRole('row').filter({ hasText: 'ramesh' })).toContainText('123');
+  await expectNoHorizontalOverflow(page);
+  await expectNoA11yViolations(page, 'expanded sample credentials');
+  await credentials.focus();
+  await page.keyboard.press('Space');
+  await expect(credentials).toHaveAttribute('aria-expanded', 'false');
   console.log('E2E checkpoint: welcome accessibility scan passed');
 
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');

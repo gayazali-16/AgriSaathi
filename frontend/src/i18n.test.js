@@ -7,6 +7,7 @@ it('keeps failure and privacy disclosures localized in Hindi and Telugu', () => 
       expect(translate(locale, key)).toMatch(script);
       expect(translate(locale, key)).not.toMatch(/\?\?\?/);
     }
+    for (const key of ['sampleCredentials', 'sampleCredentialsHelp', 'sampleAccountRole']) expect(translate(locale, key)).toMatch(script);
     expect(translate(locale, 'photoNotice')).toContain('Google Gemini');
   }
 });

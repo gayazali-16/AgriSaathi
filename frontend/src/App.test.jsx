@@ -16,6 +16,30 @@ function response(payload) {
 describe('AgriSaathi farmer workflow shell', () => {
   afterEach(() => { cleanup(); vi.unstubAllGlobals(); localStorage.clear(); });
 
+  it('expands the public credentials without logging in and localizes the disclosure', async () => {
+    localStorage.setItem('agrisathi-language', 'en');
+    const fetchMock = vi.fn(async () => response({ authenticated: false, identity: null, demo_mode: true }));
+    vi.stubGlobal('fetch', fetchMock);
+    render(<App />);
+    await screen.findByRole('heading', { name: 'Sign in to AgriSaathi' });
+    const toggle = screen.getByRole('button', { name: 'Sample login credentials' });
+    expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    expect(screen.queryByRole('table', { name: 'Sample login credentials' })).not.toBeInTheDocument();
+    fireEvent.click(toggle);
+    expect(toggle).toHaveAttribute('aria-expanded', 'true');
+    expect(screen.getByRole('table', { name: 'Sample login credentials' })).toBeVisible();
+    for (const username of ['ramesh', 'suresh', 'anil', 'lakshmi', 'rajesh', 'priya']) {
+      expect(screen.getByText(username).closest('tr')).toHaveTextContent('123');
+    }
+    expect(fetchMock.mock.calls.some(([, options]) => options?.method === 'POST')).toBe(false);
+    fireEvent.change(document.querySelector('#language-select'), { target: { value: 'hi' } });
+    const localizedToggle = screen.getByRole('button', { name: translate('hi', 'sampleCredentials') });
+    expect(screen.getByText(translate('hi', 'sampleCredentialsHelp'))).toBeVisible();
+    fireEvent.click(localizedToggle);
+    expect(localizedToggle).toHaveAttribute('aria-expanded', 'false');
+    expect(screen.queryByRole('table')).not.toBeInTheDocument();
+  });
+
   it('shows login even with an existing session and explains an invalid password', async () => {
     localStorage.setItem('agrisathi-language', 'en');
     const fetchMock = vi.fn(async (url, options = {}) => options.method === 'POST'

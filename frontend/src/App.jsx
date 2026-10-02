@@ -4,6 +4,36 @@ import OfficerWorkspace from './OfficerWorkspace.jsx';
 import { api } from './api.js';
 import { languages, localizeError, translate } from './i18n.js';
 
+const sampleAccounts = [
+  { username: 'ramesh', role: 'farmerMode', scope: 'Nalgonda · Telangana' },
+  { username: 'suresh', role: 'farmerMode', scope: 'Nalgonda · Telangana' },
+  { username: 'anil', role: 'farmerMode', scope: 'Khammam · Telangana' },
+  { username: 'lakshmi', role: 'farmerMode', scope: 'Krishna · Andhra Pradesh' },
+  { username: 'rajesh', role: 'officerMode', scope: 'Telangana' },
+  { username: 'priya', role: 'officerMode', scope: 'Andhra Pradesh' },
+];
+
+function SampleCredentials({ t }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="sample-credentials">
+      <button className="text-button" type="button" aria-expanded={open} aria-controls="sample-login-credentials" onClick={() => setOpen(!open)}>
+        {t('sampleCredentials')} <span aria-hidden="true">{open ? '▴' : '▾'}</span>
+      </button>
+      <div id="sample-login-credentials" className="sample-credentials-panel" hidden={!open}>
+        <p>{t('sampleCredentialsHelp')}</p>
+        <table>
+          <caption>{t('sampleCredentials')}</caption>
+          <thead><tr><th scope="col">{t('username')}</th><th scope="col">{t('password')}</th><th scope="col">{t('sampleAccountRole')}</th><th scope="col">{t('scope')}</th></tr></thead>
+          <tbody>{sampleAccounts.map((account) => <tr key={account.username}>
+            <td><code>{account.username}</code></td><td><code>123</code></td><td>{t(account.role)}</td><td>{account.scope}</td>
+          </tr>)}</tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
 function WelcomeScreen({ t, language, setLanguage, onLogin, loginError, busy }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -91,7 +121,7 @@ export default function App() {
       ) : (
         <FarmerWorkspace key={identity.actor_id} identity={identity} language={language} t={t} onChangeProfile={changeProfile} />
       )}
-      <footer className="site-footer"><span>AGRI / 2026</span><p>{t('footerNotice')}</p></footer>
+      <footer className="site-footer"><span>AGRI / 2026</span><p>{t('footerNotice')}</p><SampleCredentials t={t} /></footer>
     </div>
   );
 }
